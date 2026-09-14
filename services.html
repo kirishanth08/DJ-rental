@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SonicDrop | Audio Equipment Rental, DJ Booking & Lighting Services</title>
+  <meta name="description" content="Explore SonicDrop's rental catalog of concert line arrays, subwoofers, wireless mics, DMX lighting rigs, and club-certified DJ artists.">
+  <meta name="keywords" content="DJ hire, sound equipment rental, speaker hire, concert lighting rental, event production services">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="SonicDrop | Sound System Rental & DJ Services">
+  <meta property="og:description" content="Commercial-grade event sound, intelligent lighting, and certified DJ talent.">
+  <meta property="og:type" content="website">
+
+  <!-- Bootstrap 5 CSS -->
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Custom Core & Responsive CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+  <!-- ==================== GLOBAL NAVBAR ==================== -->
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg pulse-navbar" aria-label="Main Navigation">
+      <div class="container">
+        <!-- Brand Logo -->
+        <a class="navbar-brand" href="index.html">
+          <span class="brand-icon">
+            <svg class="brand-logo-svg" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" width="26" height="26">
+              <!-- DJ Headphone Arc -->
+              <path d="M6 19.5C6 12 11.4 6 18 6C24.6 6 30 12 30 19.5" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" fill="none"/>
+              <!-- Headphone Ear Cushions -->
+              <rect x="4" y="17.5" width="4" height="9" rx="2" fill="#ffffff"/>
+              <rect x="28" y="17.5" width="4" height="9" rx="2" fill="#ffffff"/>
+              <!-- Pulsing Equalizer Soundwave Bars -->
+              <rect x="11.5" y="18" width="1.8" height="6.5" rx="0.9" fill="#06b6d4"/>
+              <rect x="15" y="15" width="1.8" height="11" rx="0.9" fill="#06b6d4"/>
+              <rect x="19.2" y="15" width="1.8" height="11" rx="0.9" fill="#06b6d4"/>
+              <rect x="22.7" y="18" width="1.8" height="6.5" rx="0.9" fill="#06b6d4"/>
+              <!-- Party Lightning Bolt -->
+              <path d="M19.5 9L14.5 17.5H19L16.5 25L23.5 16H19L21.5 9Z" fill="#fbbf24"/>
+            </svg>
+          </span>
+          <span>Sonic<span class="text-gradient">Drop</span></span>
+        </a>
+
+        <!-- Mobile Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#pulseNavMenu" aria-controls="pulseNavMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list"></i>
+        </button>
+
+        <!-- Nav Items -->
+        <div class="collapse navbar-collapse" id="pulseNavMenu">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <!-- Home Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Home
+              </a>
+              <ul class="dropdown-menu minimal-dropdown" aria-labelledby="homeDropdown">
+                <li><a class="dropdown-item minimal-dropdown-item" href="index.html">Home 1 — Party & DJ</a></li>
+                <li><a class="dropdown-item minimal-dropdown-item" href="home-2.html">Home 2 — Touring & Stage</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="packages.html">Packages</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+
+          <!-- Action Controls -->
+          <div class="nav-actions">
+            <!-- Dark/Light Mode Button -->
+            <button class="control-btn theme-toggle-btn" type="button" aria-label="Toggle theme">
+              <i class="bi bi-sun-fill"></i>
+            </button>
+
+            <!-- RTL Toggle Button -->
+            <button class="rtl-toggle-btn" type="button" aria-label="Toggle direction">
+              <i class="bi bi-translate"></i>
+              <span class="rtl-text">RTL</span>
+            </button>
+
+            <!-- Primary Action CTA -->
+            <a href="contact.html" class="btn btn-pulse">
+              <i class="bi bi-calendar-event"></i> Book a DJ
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ==================== SECTION 1: PAGE HERO ==================== -->
+  <section class="page-hero hero-with-bg" style="background-image: url('https://images.unsplash.com/photo-1511192336575-5a79af67a629?auto=format&fit=crop&w=1920&q=80');">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <ul class="breadcrumb-list mb-3">
+            <li><a href="index.html">Home</a></li>
+            <li><i class="bi bi-chevron-right text-muted small"></i></li>
+            <li class="active">Services & Equipment</li>
+          </ul>
+          <!-- Telemetry Badges -->
+          <div class="d-flex flex-wrap gap-2 mb-2">
+            <span class="telemetry-badge"><span class="status-dot-live"></span> MODULAR PRODUCTION</span>
+            <span class="telemetry-badge"><i class="bi bi-gear-wide-connected"></i> DMX512 + DANTE</span>
+            <span class="telemetry-badge amber"><i class="bi bi-shield-check"></i> 100% REDUNDANT</span>
+          </div>
+          <h1 class="page-hero-title">Tour-Caliber Services. <span class="text-gradient">Flawless Delivery.</span></h1>
+          <p class="lead text-secondary mb-0">
+            From premier DJ performance to multi-zone line array deployment and synchronized DMX lighting, discover our comprehensive production capabilities.
+          </p>
+        </div>
+        <div class="col-lg-5 text-lg-end mt-4 mt-lg-0">
+          <a href="contact.html" class="btn btn-pulse">
+            <i class="bi bi-calculator"></i> Request Custom Service Estimate
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Oscilloscope Wave Divider -->
+  <div class="oscilloscope-divider" style="background: var(--surface-color); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+    <svg class="oscilloscope-svg" viewBox="0 0 1200 38" fill="none">
+      <path d="M0,19 L110,19 L140,5 L160,33 L180,9 L200,28 L220,19 L420,19 L450,2 L480,36 L500,8 L520,30 L540,19 L770,19 L800,6 L820,32 L840,12 L860,26 L880,19 L1200,19" stroke="url(#osciGradSvc)" stroke-width="2.5" stroke-linecap="round"/>
+      <defs>
+        <linearGradient id="osciGradSvc" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.3"/>
+          <stop offset="40%" stop-color="#8b5cf6"/>
+          <stop offset="60%" stop-color="#06b6d4"/>
+          <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.3"/>
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+
+  <!-- ==================== SECTION 2: FILTERABLE SERVICES GRID ==================== -->
+  <section class="py-5" id="services-grid">
+    <div class="container py-4">
+      <!-- Filter Controls -->
+      <div class="filter-btn-group mb-5">
+        <button type="button" class="filter-btn service-filter-btn active" data-category="all">All Services</button>
+        <button type="button" class="filter-btn service-filter-btn" data-category="dj">DJ Booking</button>
+        <button type="button" class="filter-btn service-filter-btn" data-category="sound">Sound Rental</button>
+        <button type="button" class="filter-btn service-filter-btn" data-category="lighting">Lighting & FX</button>
+        <button type="button" class="filter-btn service-filter-btn" data-category="production">Full Production</button>
+      </div>
+
+      <div class="row g-4">
+        <!-- Service 1: DJ Booking -->
+        <div class="col-lg-6 service-card-item" data-category="dj">
+          <div class="mixer-channel-card h-100 d-flex flex-column">
+            <div class="channel-strip-header">
+              <span>[CH 01 // CDJ RIG]</span>
+              <span class="channel-tag">RESIDENT TALENT</span>
+              <span class="hw-rivet"></span>
+            </div>
+            <div class="p-4 flex-grow-1 d-flex flex-column">
+              <div class="row g-4 align-items-center flex-grow-1">
+                <div class="col-sm-5">
+                  <div class="rounded-4 overflow-hidden shadow-sm" style="height: 220px;">
+                    <img src="https://images.unsplash.com/photo-1471478331149-c72f17e33c73?auto=format&fit=crop&w=600&q=80" 
+                         alt="Club DJ with headphones mixing live set on digital CDJ players" 
+                         class="w-100 h-100" style="object-fit: cover;">
+                  </div>
+                </div>
+                <div class="col-sm-7 d-flex flex-column justify-content-between h-100">
+                  <div>
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                      <span class="channel-tag">TALENT</span>
+                      <span class="telemetry-badge">320kbps WAV</span>
+                    </div>
+                    <h4>Professional DJ Booking</h4>
+                    <div class="vu-meter-h mb-3">
+                      <span class="vu-h-seg"></span><span class="vu-h-seg"></span><span class="vu-h-seg"></span><span class="vu-h-seg"></span><span class="vu-h-seg"></span><span class="vu-h-seg"></span><span class="vu-h-seg"></span><span class="vu-h-seg"></span>
+                    </div>
+                    <p class="small text-secondary mb-3">Experienced open-format and electronic club DJs skilled in beatmatching, crowd psychology, and custom playlist curation.</p>
+                    <ul class="list-unstyled small mb-3">
+                      <li><i class="bi bi-check2 text-info me-1"></i> Multi-genre mixing (Top 40, House, Hip-Hop, Latin)</li>
+                      <li><i class="bi bi-check2 text-info me-1"></i> Professional MC hosting & ceremony coordination</li>
+                    </ul>
+                  </div>
+                  <a href="service-details.html?service=dj" class="btn btn-sm btn-outline-pulse w-100 mt-auto justify-content-center">Service Deep-Dive <i class="bi bi-arrow-right ms-1"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 2: Sound System Rental -->
+        <div class="col-lg-6 service-card-item" data-category="sound">
+          <div class="mixer-channel-card h-100 d-flex flex-column">
+            <div class="channel-strip-header">
+              <span>[CH 02 // SUB ARRAY]</span>
+              <span class="channel-tag">HIGH-OUTPUT PA</span>
+              <span class="hw-rivet"></span>
+            </div>
+            <div class="p-4 flex-grow-1 d-flex flex-column">
+              <div class="row g-4 align-items-center flex-grow-1">
+                <div class="col-sm-5">
+                  <div class="rounded-4 overflow-hidden shadow-sm" style="height: 220px;">
+                    <img src="https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=800&q=80" 
+                         alt="Array of active PA speakers and high-output subwoofer cabinets" 
+                         class="w-100 h-100" style="object-fit: cover;">
+                  </div>
+                </div>
+                <div class="col-sm-7 d-flex flex-column justify-content-between h-100">
+                  <div>
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                      <span class="channel-tag" style="color: var(--secondary-color); border-color: var(--secondary-color);">PRO AUDIO</span>
+                      <span class="telemetry-badge amber">138 dB SPL</span>
+                    </div>
+                    <h4>Sound System Rental</h4>
+                    <div class="vu-meter-h mb-3">
+                      <span class="vu-h-seg"></span><span class="vu-h-seg"></span><span class="vu-h-seg"></span><span class="vu-h-seg"></span><span class="vu-h-seg"></span><span class="vu-h-seg"></span><span class="vu-h-seg"></span><span class="vu-h-seg"></span>
+                    </div>
+                    <p class="small text-secondary mb-3">Turnkey sound rigs including active tops, 18" and 21" subwoofers, digital stage boxes, and wireless RF microphone racks.</p>
+                    <ul class="list-unstyled small mb-3">
+                      <li><i class="bi bi-check2 text-info me-1"></i> Line array towers & point-source active PA setups</li>
+                      <li><i class="bi bi-check2 text-info me-1"></i> Shure Axient Digital & Sennheiser wireless systems</li>
+                    </ul>
+                  </div>
+                  <a href="service-details.html?service=sound" class="btn btn-sm btn-outline-pulse w-100 mt-auto justify-content-center">Equipment Specs <i class="bi bi-arrow-right ms-1"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 3: Lighting Setup -->
+        <div class="col-lg-6 service-card-item" data-category="lighting">
+          <div class="mixer-channel-card h-100 d-flex flex-column">
+            <div class="channel-strip-header">
+              <span>[CH 03 // DMX BEAMS]</span>
+              <span class="channel-tag">ROBOTIC OPTICS</span>
+              <span class="hw-rivet"></span>
+            </div>
+            <div class="p-4 flex-grow-1 d-flex flex-column">
+              <div class="row g-4 align-items-center flex-grow-1">
+                <div class="col-sm-5">
+                  <div class="rounded-4 overflow-hidden shadow-sm" style="height: 220px;">
+                    <img src="https://images.unsplash.com/photo-1504704911898-68304a7d2807?auto=format&fit=crop&w=600&q=80" 
+                         alt="DMX stage moving head lighting fixtures in vibrant purple and cyan colors" 
+                         class="w-100 h-100" style="object-fit: cover;">
+                  </div>
+                </div>
+                <div class="col-sm-7 d-flex flex-column justify-content-between h-100">
+                  <div>
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                      <span class="channel-tag" style="color: var(--accent-color); border-color: var(--accent-color);">LIGHTING</span>
+                      <span class="telemetry-badge accent">DMX 512</span>
+                    </div>
+                    <h4>Intelligent Lighting & FX</h4>
+                    <div class="vu-meter-h mb-3">
+                      <span class="vu-h-seg"></span><span class="vu-h-seg"></span><span class="vu-h-seg"></span><span class="vu-h-seg"></span><span class="vu-h-seg"></span><span class="vu-h-seg"></span><span class="vu-h-seg"></span><span class="vu-h-seg"></span>
+                    </div>
+                    <p class="small text-secondary mb-3">Choreographed DMX moving heads, architectural wireless battery uplighting, dance-floor strobes, and indoor cold sparks.</p>
+                    <ul class="list-unstyled small mb-3">
+                      <li><i class="bi bi-check2 text-info me-1"></i> Sound-reactive synchronized light shows</li>
+                      <li><i class="bi bi-check2 text-info me-1"></i> Low-fog dry-ice clouds for romantic first dances</li>
+                    </ul>
+                  </div>
+                  <a href="service-details.html?service=lighting" class="btn btn-sm btn-outline-pulse w-100 mt-auto justify-content-center">Lighting Catalog <i class="bi bi-arrow-right ms-1"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 4: Celebration Special FX -->
+        <div class="col-lg-6 service-card-item" data-category="lighting">
+          <div class="mixer-channel-card h-100 d-flex flex-column">
+            <div class="channel-strip-header">
+              <span>[CH 04 // CELEBRATION FX]</span>
+              <span class="channel-tag" style="color: var(--accent-color); border-color: var(--accent-color);">ATMOSPHERE</span>
+              <span class="hw-rivet"></span>
+            </div>
+            <div class="p-4 flex-grow-1 d-flex flex-column">
+              <div class="row g-4 align-items-center flex-grow-1">
+                <div class="col-sm-5">
+                  <div class="rounded-4 overflow-hidden shadow-sm" style="height: 220px;">
+                    <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=600&q=80" 
+                         alt="Indoor cold spark fountain sparklers and atmospheric celebration effects" 
+                         class="w-100 h-100" style="object-fit: cover;">
+                  </div>
+                </div>
+                <div class="col-sm-7 d-flex flex-column justify-content-between h-100">
+                  <div>
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                      <span class="channel-tag" style="color: var(--accent-color); border-color: var(--accent-color);">SPECIAL FX</span>
+                      <span class="telemetry-badge accent">ZERO SMOKE</span>
+                    </div>
+                    <h4>Celebration Special FX & Clouds</h4>
+                    <div class="vu-meter-h mb-3">
+                      <span class="vu-h-seg"></span><span class="vu-h-seg"></span><span class="vu-h-seg"></span><span class="vu-h-seg"></span><span class="vu-h-seg"></span><span class="vu-h-seg"></span><span class="vu-h-seg"></span><span class="vu-h-seg"></span>
+                    </div>
+                    <p class="small text-secondary mb-3">Create breathtaking photo and video highlights with cold-spark fountains, "dancing on clouds" dry ice fog, and continuous hazer atmospheres.</p>
+                    <ul class="list-unstyled small mb-3">
+                      <li><i class="bi bi-check2 text-info me-1"></i> Indoor-safe, odorless, cold-touch spark machines</li>
+                      <li><i class="bi bi-check2 text-info me-1"></i> Low-lying heavy clouds that stay strictly knee-level</li>
+                    </ul>
+                  </div>
+                  <a href="service-details.html?service=fx" class="btn btn-sm btn-outline-pulse w-100 mt-auto justify-content-center">Special FX Specs <i class="bi bi-arrow-right ms-1"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 5: Live Musician & DJ Hybrid -->
+        <div class="col-lg-6 service-card-item" data-category="dj">
+          <div class="mixer-channel-card h-100 d-flex flex-column">
+            <div class="channel-strip-header">
+              <span>[CH 05 // LIVE FUSION]</span>
+              <span class="channel-tag" style="color: var(--primary-color); border-color: var(--primary-color);">HYBRID SETS</span>
+              <span class="hw-rivet"></span>
+            </div>
+            <div class="p-4 flex-grow-1 d-flex flex-column">
+              <div class="row g-4 align-items-center flex-grow-1">
+                <div class="col-sm-5">
+                  <div class="rounded-4 overflow-hidden shadow-sm" style="height: 220px;">
+                    <img src="assets/img/hybrid-dj-musician.jpg" 
+                         alt="Live saxophonist and musician performing alongside electronic DJ setup" 
+                         class="w-100 h-100" style="object-fit: cover;">
+                  </div>
+                </div>
+                <div class="col-sm-7 d-flex flex-column justify-content-between h-100">
+                  <div>
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                      <span class="channel-tag" style="color: var(--primary-color); border-color: var(--primary-color);">FUSION</span>
+                      <span class="telemetry-badge">LIVE SAX + BEATS</span>
+                    </div>
+                    <h4>Live Musician & DJ Hybrid Sets</h4>
+                    <div class="vu-meter-h mb-3">
+                      <span class="vu-h-seg"></span><span class="vu-h-seg"></span><span class="vu-h-seg"></span><span class="vu-h-seg"></span><span class="vu-h-seg"></span><span class="vu-h-seg"></span><span class="vu-h-seg"></span><span class="vu-h-seg"></span>
+                    </div>
+                    <p class="small text-secondary mb-3">Elevate your celebration by pairing your DJ with roaming live saxophonists, energetic bongo/percussion players, or soulful electric violinists.</p>
+                    <ul class="list-unstyled small mb-3">
+                      <li><i class="bi bi-check2 text-info me-1"></i> Interactive roaming musicians performing on dance floor</li>
+                      <li><i class="bi bi-check2 text-info me-1"></i> Seamless wireless audio integration with main PA</li>
+                    </ul>
+                  </div>
+                  <a href="service-details.html?service=hybrid" class="btn btn-sm btn-outline-pulse w-100 mt-auto justify-content-center">Live Hybrid Details <i class="bi bi-arrow-right ms-1"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 6: Full Stage Production -->
+        <div class="col-lg-6 service-card-item" data-category="production">
+          <div class="mixer-channel-card h-100 d-flex flex-column">
+            <div class="channel-strip-header">
+              <span>[CH 06 // STAGE TRUSS]</span>
+              <span class="channel-tag">FULL RIGGING</span>
+              <span class="hw-rivet"></span>
+            </div>
+            <div class="p-4 flex-grow-1 d-flex flex-column">
+              <div class="row g-4 align-items-center flex-grow-1">
+                <div class="col-sm-5">
+                  <div class="rounded-4 overflow-hidden shadow-sm" style="height: 220px;">
+                    <img src="https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?auto=format&fit=crop&w=600&q=80" 
+                         alt="Large outdoor festival stage rigging with aluminum box trusses and crowd" 
+                         class="w-100 h-100" style="object-fit: cover;">
+                  </div>
+                </div>
+                <div class="col-sm-7 d-flex flex-column justify-content-between h-100">
+                  <div>
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                      <span class="channel-tag" style="color: var(--amber-accent); border-color: var(--amber-accent);">TURNKEY</span>
+                      <span class="telemetry-badge amber">FOH CREW</span>
+                    </div>
+                    <h4>Full Event Production & Rigging</h4>
+                    <div class="vu-meter-h mb-3">
+                      <span class="vu-h-seg"></span><span class="vu-h-seg"></span><span class="vu-h-seg"></span><span class="vu-h-seg"></span><span class="vu-h-seg"></span><span class="vu-h-seg"></span><span class="vu-h-seg"></span><span class="vu-h-seg"></span>
+                    </div>
+                    <p class="small text-secondary mb-3">Comprehensive event infrastructure encompassing aluminum box trussing, power distribution generators, staging decks, and on-site engineers.</p>
+                    <ul class="list-unstyled small mb-3">
+                      <li><i class="bi bi-check2 text-info me-1"></i> Certified FOH audio and lighting technicians on-site</li>
+                      <li><i class="bi bi-check2 text-info me-1"></i> Acoustical venue modeling & sound permits handling</li>
+                    </ul>
+                  </div>
+                  <a href="service-details.html?service=production" class="btn btn-sm btn-outline-pulse w-100 mt-auto justify-content-center">Production Details <i class="bi bi-arrow-right ms-1"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECTION 3: AUDIO & LIGHTING HARDWARE BREAKDOWN ==================== -->
+  <section class="py-5" style="background: var(--surface-color);" id="hardware-breakdown">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <div class="section-badge">
+          <i class="bi bi-hdd-stack"></i> Hardware Inventory
+        </div>
+        <h2 class="section-title">The Equipment Fleet <span class="text-gradient">Behind the Sound</span></h2>
+        <p class="section-subtitle">Every piece of gear is flight-cased, routine bench-tested, and maintained according to strict manufacturer acoustic parameters.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Item 1 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="chamfer-card p-4 h-100">
+            <span class="flightcase-bracket bracket-tl"></span>
+            <span class="flightcase-bracket bracket-tr"></span>
+            <span class="flightcase-bracket bracket-bl"></span>
+            <span class="flightcase-bracket bracket-br"></span>
+            <i class="bi bi-speaker-fill fs-2 mb-3 text-gradient d-block"></i>
+            <h5>Loudspeakers & Arrays</h5>
+            <p class="small text-secondary">Active 2-way 15" point-source cabinets, active curved line-arrays, and ultra-compact architectural column arrays for ballroom speech clarity.</p>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="chamfer-card p-4 h-100">
+            <span class="flightcase-bracket bracket-tl"></span>
+            <span class="flightcase-bracket bracket-tr"></span>
+            <span class="flightcase-bracket bracket-bl"></span>
+            <span class="flightcase-bracket bracket-br"></span>
+            <i class="bi bi-soundwave fs-2 mb-3 text-info d-block"></i>
+            <h5>Sub-bass Horns</h5>
+            <p class="small text-secondary">High-excursion 18" and dual 21" subwoofers with high-damping factor Class-D amplification capable of reaching clean 28Hz frequencies.</p>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="chamfer-card p-4 h-100">
+            <span class="flightcase-bracket bracket-tl"></span>
+            <span class="flightcase-bracket bracket-tr"></span>
+            <span class="flightcase-bracket bracket-bl"></span>
+            <span class="flightcase-bracket bracket-br"></span>
+            <i class="bi bi-sliders fs-2 mb-3 text-warning d-block"></i>
+            <h5>Digital Consoles</h5>
+            <p class="small text-secondary">Pioneer DJM-V10, DJM-A9, and Allen & Heath SQ-series digital consoles with 96kHz internal processing and motorized faders.</p>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="chamfer-card p-4 h-100">
+            <span class="flightcase-bracket bracket-tl"></span>
+            <span class="flightcase-bracket bracket-tr"></span>
+            <span class="flightcase-bracket bracket-bl"></span>
+            <span class="flightcase-bracket bracket-br"></span>
+            <i class="bi bi-lightbulb-fill fs-2 mb-3 text-danger d-block"></i>
+            <h5>Moving Heads & FX</h5>
+            <p class="small text-secondary">Robotic 280W beam fixtures, RGBAW wireless uplighting bars, dry-ice fog chillers, and non-pyrotechnic cold spark fountain units.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECTION 4: VENUE & SPACE ACOUSTIC SPECIALIZATIONS ==================== -->
+  <section class="py-5" id="venue-spaces">
+    <div class="container py-4">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <div class="rounded-4 overflow-hidden border shadow-lg" style="border-color: var(--border-color) !important;">
+            <img src="assets/img/venue-acoustics-mastery.jpg" 
+                 alt="Sound engineer calibrating live concert line arrays and acoustics in historic grand hall" 
+                 class="w-100" style="height: 420px; object-fit: cover;">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="section-badge">
+            <i class="bi bi-building"></i> Acoustical Versatility
+          </div>
+          <h2 class="section-title">Acoustic Mastery Across <span class="text-gradient">Every Venue Type</span></h2>
+          <p class="text-secondary mb-4">
+            Glass atriums bounce reflections; outdoor fields swallow bass. Our audio team models sound wave propagation for each unique architectural environment.
+          </p>
+
+          <div class="d-flex flex-column gap-3">
+            <div class="d-flex gap-3">
+              <i class="bi bi-building-check text-info fs-4"></i>
+              <div>
+                <h6 class="mb-1">Historic Ballrooms & Glass Atriums</h6>
+                <p class="small text-secondary mb-0">We employ delayed fill speakers and directional cardiod dispersion to tame harsh glass and marble reflections.</p>
+              </div>
+            </div>
+
+            <div class="d-flex gap-3">
+              <i class="bi bi-tree text-success fs-4"></i>
+              <div>
+                <h6 class="mb-1">Outdoor Amphitheaters & Estate Lawns</h6>
+                <p class="small text-secondary mb-0">Wind temperature gradient compensation and ground-coupled subwoofer rows to maintain impactful bass across open fields.</p>
+              </div>
+            </div>
+
+            <div class="d-flex gap-3">
+              <i class="bi bi-water text-primary fs-4"></i>
+              <div>
+                <h6 class="mb-1">Private Yachts & Intimate Lounges</h6>
+                <p class="small text-secondary mb-0">Compact, high-efficiency footprints with marine-grade power conditioning and discreet aesthetic placement.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECTION 5: SAFETY & PRODUCTION COMPLIANCE ==================== -->
+  <section class="py-5" style="background: var(--surface-color);" id="safety-protocols">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <div class="section-badge">
+          <i class="bi bi-shield-check"></i> Safety First
+        </div>
+        <h2 class="section-title">Strict Production & <span class="text-gradient">Safety Standards</span></h2>
+        <p class="section-subtitle">We hold comprehensive $5,000,000 commercial liability insurance and comply with strict electrical and noise level protocols.</p>
+      </div>
+
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-5">
+          <div class="rounded-4 overflow-hidden border shadow-lg" style="border-color: var(--border-color) !important; height: 380px;">
+            <img src="assets/img/power-conditioning-rig.jpg" 
+                 alt="Power Conditioning and Voltage Drop Protection for Outdoor Rigs with digital voltage monitors" 
+                 class="w-100 h-100" style="object-fit: cover;">
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="d-flex flex-column gap-3">
+            <div class="pulse-card">
+              <h5><i class="bi bi-lightning text-warning me-2"></i> Power Conditioning & Voltage Drop Protection for Outdoor Rigs</h5>
+              <p class="small text-secondary mb-2">Every sound system and lighting truss is mapped across isolated circuits with portable power distribution boxes and active voltage conditioners to eliminate tripped venue breakers, suppress voltage spikes, and prevent generator brownouts.</p>
+              <a href="blog-details.html?id=power-conditioning" class="small fw-bold text-info">Read Voltage Drop Protection Guide <i class="bi bi-arrow-right"></i></a>
+            </div>
+
+            <div class="pulse-card">
+              <h5><i class="bi bi-shield-lock text-info me-2"></i> Safety Cable Rigging</h5>
+              <p class="small text-secondary mb-0">All overhead moving fixtures feature rated steel safety bonds, dual clamps, and TÜV-certified aluminum box trusses.</p>
+            </div>
+
+            <div class="pulse-card">
+              <h5><i class="bi bi-soundwave text-danger me-2"></i> Decibel Level Governance</h5>
+              <p class="small text-secondary mb-0">We calibrate sound to adhere to municipal decibel limits, ensuring your party stays energized without venue noise fines or shutdowns.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECTION 6: CUSTOM ESTIMATE CTA ==================== -->
+  <section class="py-5" id="services-cta">
+    <div class="container py-4">
+      <div class="p-5 rounded-4 text-center" style="background: var(--surface-elevated); border: 1px solid var(--border-color);">
+        <h2 class="display-6 fw-bold mb-3">Need a Custom Hardware & Talent Package?</h2>
+        <p class="lead text-secondary mx-auto mb-4" style="max-width: 650px;">
+          Send us your venue specs or event brief, and our engineers will return a complete itemized sound, lighting, and DJ quote within 24 hours.
+        </p>
+        <div class="d-flex justify-content-center gap-3 flex-wrap">
+          <a href="contact.html" class="btn btn-pulse btn-lg">
+            <i class="bi bi-envelope-paper"></i> Request Tailored Proposal
+          </a>
+          <a href="packages.html" class="btn btn-outline-pulse btn-lg">
+            <i class="bi bi-boxes"></i> Explore Standard Packages
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== GLOBAL FOOTER ==================== -->
+  <footer class="pulse-footer">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Col 1: Brand & Bio -->
+        <div class="col-lg-4 col-md-6 footer-brand">
+          <a class="navbar-brand mb-3" href="index.html">
+            <span class="brand-icon">
+            <svg class="brand-logo-svg" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" width="26" height="26">
+              <!-- DJ Headphone Arc -->
+              <path d="M6 19.5C6 12 11.4 6 18 6C24.6 6 30 12 30 19.5" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" fill="none"/>
+              <!-- Headphone Ear Cushions -->
+              <rect x="4" y="17.5" width="4" height="9" rx="2" fill="#ffffff"/>
+              <rect x="28" y="17.5" width="4" height="9" rx="2" fill="#ffffff"/>
+              <!-- Pulsing Equalizer Soundwave Bars -->
+              <rect x="11.5" y="18" width="1.8" height="6.5" rx="0.9" fill="#06b6d4"/>
+              <rect x="15" y="15" width="1.8" height="11" rx="0.9" fill="#06b6d4"/>
+              <rect x="19.2" y="15" width="1.8" height="11" rx="0.9" fill="#06b6d4"/>
+              <rect x="22.7" y="18" width="1.8" height="6.5" rx="0.9" fill="#06b6d4"/>
+              <!-- Party Lightning Bolt -->
+              <path d="M19.5 9L14.5 17.5H19L16.5 25L23.5 16H19L21.5 9Z" fill="#fbbf24"/>
+            </svg>
+          </span>
+          <span>Sonic<span class="text-gradient">Drop</span></span>
+          </a>
+          <p class="small text-secondary mb-3">
+            SonicDrop Audio & DJ Production delivers commercial-grade sound engineering, concert sound system hire, DJ talent curation, and architectural lighting for unforgettable events.
+          </p>
+          <div class="social-links">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Services -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-heading">Services</h5>
+          <ul class="footer-links">
+            <li><a href="service-details.html?service=dj">DJ Booking</a></li>
+            <li><a href="services.html">Sound System Rental</a></li>
+            <li><a href="services.html">Stage Lighting Setup</a></li>
+            <li><a href="services.html">Full Event Production</a></li>
+            <li><a href="services.html">Wireless Mic Systems</a></li>
+            <li><a href="services.html">Subwoofer Rental</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Events -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-heading">Events</h5>
+          <ul class="footer-links">
+            <li><a href="packages.html">Weddings & Galas</a></li>
+            <li><a href="packages.html">Birthday Celebrations</a></li>
+            <li><a href="packages.html">Corporate Summits</a></li>
+            <li><a href="packages.html">Private VIP Parties</a></li>
+            <li><a href="packages.html">Concerts & Festivals</a></li>
+            <li><a href="packages.html">College Gatherings</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Quick Navigation -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-heading">Company</h5>
+          <ul class="footer-links">
+            <li><a href="about.html">About Our Story</a></li>
+            <li><a href="packages.html">Tiered Packages</a></li>
+            <li><a href="gallery.html">Event Gallery</a></li>
+            <li><a href="blog.html">Acoustic Blog</a></li>
+            <li><a href="contact.html">Contact & Booking</a></li>
+            <li><a href="coming-soon.html">New Gear Launch</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 5: Contact & Newsletter -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-heading">Contact Direct</h5>
+          <div class="footer-contact-item">
+            <i class="bi bi-telephone"></i>
+            <span>+1 (800) 456-PULSE</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope"></i>
+            <span>bookings@sonicdrop.audio</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt"></i>
+            <span>Audio Studio 4B, Sound District, NY</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-clock"></i>
+            <span>Mon - Sat: 9AM - 8PM</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Copyright -->
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+            &copy; 2026 SonicDrop Audio & DJ Production. All Rights Reserved.
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <a href="contact.html" class="me-3">Privacy Policy</a>
+            <a href="contact.html" class="me-3">Terms & Rental Agreement</a>
+            <a href="contact.html">Safety & Noise Compliance</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" type="button" aria-label="Back to top">
+    <i class="bi bi-chevron-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/rtl.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/filters.js"></script>
+  <script src="assets/js/forms.js"></script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+/* ==========================================================================
+   PULSEWAVE AUDIO & DJ PRODUCTION - RESPONSIVE STYLESHEET
+   Ensures seamless experience across all screen sizes (320px - 1920px)
+   ========================================================================== */
+
+/* --- Mobile First & Extra Small Devices (< 576px) --- */
+@media (max-width: 575.98px) {
+  .hero-section {
+    padding: 4.5rem 0 3.5rem;
+  }
+
+  .hero-title {
+    font-size: 2.15rem;
+    line-height: 1.18;
+  }
+
+  .hero-img {
+    height: 320px;
+  }
+
+  .hero-floating-badge {
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
+    padding: 0.75rem 1rem;
+  }
+
+  .hero-floating-badge .badge-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 1.1rem;
+  }
+
+  .section-title {
+    font-size: 1.85rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.98rem;
+  }
+
+  .pulse-card {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .package-card {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .package-price {
+    font-size: 2.25rem;
+  }
+
+  .btn-pulse,
+  .btn-outline-pulse {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .d-flex.flex-wrap.gap-3 {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .d-flex.flex-wrap.gap-3 > .btn-pulse,
+  .d-flex.flex-wrap.gap-3 > .btn-outline-pulse {
+    width: 100%;
+  }
+
+  .stat-box {
+    padding: 1rem 0.5rem;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+
+  .pulse-footer {
+    padding-top: 3.5rem;
+  }
+
+  .footer-bottom {
+    margin-top: 2.5rem;
+    text-align: center;
+  }
+
+  .footer-bottom .text-md-end {
+    text-align: center !important;
+    margin-top: 0.75rem;
+  }
+
+  .table-responsive {
+    border-radius: 12px;
+  }
+}
+
+/* --- Mobile Navigation Offcanvas / Collapsible Menu (All < 992px) --- */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 18px;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    box-shadow: var(--shadow-lg);
+  }
+
+  .navbar-nav {
+    margin-bottom: 1.25rem;
+    gap: 0.35rem;
+  }
+
+  .nav-link {
+    padding: 0.65rem 0.75rem !important;
+    border-radius: 8px;
+  }
+
+  .nav-link:hover,
+  .nav-link.active {
+    background: var(--tag-bg);
+  }
+
+  .nav-link.active::after {
+    display: none;
+  }
+
+  .pulse-navbar .dropdown-menu {
+    min-width: 100% !important;
+    width: 100%;
+    margin-top: 0.5rem !important;
+    background: var(--surface-elevated) !important;
+    box-shadow: none !important;
+    border: 1px solid var(--border-color) !important;
+  }
+
+  .nav-actions {
+    flex-wrap: wrap;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .nav-actions .btn-pulse {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .page-hero {
+    padding: 3.5rem 0 3rem;
+  }
+}
+
+/* --- Tablets & Medium Screens (768px - 991.98px) --- */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .hero-img {
+    height: 400px;
+  }
+
+  .hero-title {
+    font-size: 2.85rem;
+  }
+}
+
+/* --- Large Screens (>= 992px) --- */
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav {
+    gap: 0.25rem;
+  }
+}
+
+/* --- Global Overflow Protection --- */
+body, html {
+  max-width: 100vw;
+  overflow-x: clip;
+}
+
+.container, .container-fluid {
+  overflow-x: clip;
+}

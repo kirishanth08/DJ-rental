@@ -1,0 +1,109 @@
+/* ==========================================================================
+   PULSEWAVE AUDIO & DJ PRODUCTION - RTL STYLESHEET
+   Full bidirectional layout support (Arabic / Hebrew)
+   ========================================================================== */
+
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+[dir="rtl"] body {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+/* Navbar */
+[dir="rtl"] .navbar-nav {
+  padding-right: 0;
+}
+
+[dir="rtl"] .nav-link.active::after {
+  left: auto;
+  right: 0.85rem;
+}
+
+[dir="rtl"] .hero-floating-badge {
+  left: auto;
+  right: 25px;
+}
+
+@media (max-width: 575.98px) {
+  [dir="rtl"] .hero-floating-badge {
+    left: 12px;
+    right: 12px;
+  }
+}
+
+/* Icons & Flip */
+[dir="rtl"] .bi-arrow-right {
+  transform: rotate(180deg);
+  display: inline-block;
+}
+
+[dir="rtl"] .bi-chevron-right {
+  transform: rotate(180deg);
+  display: inline-block;
+}
+
+[dir="rtl"] .bi-arrow-left {
+  transform: rotate(180deg);
+  display: inline-block;
+}
+
+[dir="rtl"] .footer-links li a:hover {
+  transform: translateX(-4px);
+}
+
+/* Package Badge */
+[dir="rtl"] .popular-badge {
+  right: auto;
+  left: 25px;
+}
+
+/* Blog Tag */
+[dir="rtl"] .blog-badge-tag {
+  left: auto;
+  right: 15px;
+}
+
+/* Widget underline */
+[dir="rtl"] .widget-title::after {
+  left: auto;
+  right: 0;
+}
+
+/* Tables */
+[dir="rtl"] .table-pulse th:first-child,
+[dir="rtl"] .table-pulse td:first-child {
+  text-align: right;
+}
+
+/* Forms */
+[dir="rtl"] .form-check {
+  padding-right: 1.5em;
+  padding-left: 0;
+}
+
+[dir="rtl"] .form-check-input {
+  float: right;
+  margin-right: -1.5em;
+  margin-left: 0;
+}
+
+/* Toast & Back to Top */
+[dir="rtl"] .pulse-toast-container,
+[dir="rtl"] .back-to-top {
+  right: auto;
+  left: 25px;
+}
+
+/* Accordion Arrow */
+[dir="rtl"] .pulse-accordion .accordion-button::after {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+/* Breadcrumbs */
+[dir="rtl"] .breadcrumb-list {
+  padding-right: 0;
+}

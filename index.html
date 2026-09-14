@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SonicDrop | DJ & Sound System Rental Service — Live Event Audio & Production</title>
+  <meta name="description" content="Award-winning DJ booking, high-fidelity sound system rentals, ambient event lighting, and celebration special effects for weddings, parties, corporate events, and festivals.">
+  <meta name="keywords" content="DJ rental, sound system hire, event lighting, wedding DJ, party DJ booking, corporate event audio, cold spark fountains">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="SonicDrop | DJ & Sound System Rental Service">
+  <meta property="og:description" content="Turn every event into an unforgettable celebration with charismatic DJs, crystal-clear sound, and vibrant lighting.">
+  <meta property="og:type" content="website">
+
+  <!-- Bootstrap 5 CSS -->
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Custom Core & Responsive CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+  <!-- ==================== GLOBAL NAVBAR ==================== -->
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg pulse-navbar" aria-label="Main Navigation">
+      <div class="container">
+        <!-- Brand Logo -->
+        <a class="navbar-brand" href="index.html">
+          <span class="brand-icon">
+            <svg class="brand-logo-svg" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" width="26" height="26">
+              <!-- DJ Headphone Arc -->
+              <path d="M6 19.5C6 12 11.4 6 18 6C24.6 6 30 12 30 19.5" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" fill="none"/>
+              <!-- Headphone Ear Cushions -->
+              <rect x="4" y="17.5" width="4" height="9" rx="2" fill="#ffffff"/>
+              <rect x="28" y="17.5" width="4" height="9" rx="2" fill="#ffffff"/>
+              <!-- Pulsing Equalizer Soundwave Bars -->
+              <rect x="11.5" y="18" width="1.8" height="6.5" rx="0.9" fill="#06b6d4"/>
+              <rect x="15" y="15" width="1.8" height="11" rx="0.9" fill="#06b6d4"/>
+              <rect x="19.2" y="15" width="1.8" height="11" rx="0.9" fill="#06b6d4"/>
+              <rect x="22.7" y="18" width="1.8" height="6.5" rx="0.9" fill="#06b6d4"/>
+              <!-- Party Lightning Bolt -->
+              <path d="M19.5 9L14.5 17.5H19L16.5 25L23.5 16H19L21.5 9Z" fill="#fbbf24"/>
+            </svg>
+          </span>
+          <span>Sonic<span class="text-gradient">Drop</span></span>
+        </a>
+
+        <!-- Mobile Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#pulseNavMenu" aria-controls="pulseNavMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list"></i>
+        </button>
+
+        <!-- Nav Items -->
+        <div class="collapse navbar-collapse" id="pulseNavMenu">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <!-- Home Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Home
+              </a>
+              <ul class="dropdown-menu minimal-dropdown" aria-labelledby="homeDropdown">
+                <li><a class="dropdown-item minimal-dropdown-item active" href="index.html">Home 1 — Party & DJ</a></li>
+                <li><a class="dropdown-item minimal-dropdown-item" href="home-2.html">Home 2 — Touring & Stage</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="packages.html">Packages</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+
+          <!-- Action Controls -->
+          <div class="nav-actions">
+            <!-- Dark/Light Mode Button -->
+            <button class="control-btn theme-toggle-btn" type="button" aria-label="Toggle theme">
+              <i class="bi bi-sun-fill"></i>
+            </button>
+
+            <!-- RTL Toggle Button -->
+            <button class="rtl-toggle-btn" type="button" aria-label="Toggle direction">
+              <i class="bi bi-translate"></i>
+              <span class="rtl-text">RTL</span>
+            </button>
+
+            <!-- Primary Action CTA -->
+            <a href="contact.html" class="btn btn-pulse">
+              <i class="bi bi-calendar-event"></i> Book a DJ
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ==================== SECTION 1: WELCOMING & ENERGETIC HERO ==================== -->
+  <section class="hero-section hero-with-bg" id="hero" style="background-image: url('https://images.unsplash.com/photo-1459749411175-04bf5292ceea?auto=format&fit=crop&w=1920&q=80');">
+    <div class="hero-glow-1"></div>
+    <div class="hero-glow-2"></div>
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 hero-content">
+          <!-- Welcoming Trust Badges -->
+          <div class="d-flex flex-wrap gap-2 mb-3">
+            <span class="celebration-badge-pill position-static d-inline-flex">
+              <i class="bi bi-star-fill text-warning"></i> 4.9/5 RATED BY 500+ HOSTS
+            </span>
+            <span class="celebration-badge-pill position-static d-inline-flex">
+              <i class="bi bi-music-note-beamed text-info"></i> CUSTOM PLAYLISTS
+            </span>
+            <span class="celebration-badge-pill position-static d-inline-flex">
+              <i class="bi bi-shield-check text-success"></i> 100% ON-TIME GUARANTEE
+            </span>
+          </div>
+
+          <div class="section-badge">
+            <i class="bi bi-stars"></i> Bring Your Celebration to Life
+          </div>
+          <h1 class="hero-title">
+            Unforgettable Music & Sound For Every <span class="text-gradient">Celebration</span>
+          </h1>
+          <p class="lead mb-4">
+            Turn your wedding, milestone birthday, corporate gala, or private party into a high-energy celebration. We pair charismatic, award-winning DJs with crystal-clear sound and stunning ambient lighting so your dance floor stays packed all night.
+          </p>
+          <div class="d-flex flex-wrap gap-3 mb-5">
+            <a href="contact.html" class="btn btn-pulse">
+              <i class="bi bi-vinyl-fill"></i> Book Your DJ Today
+            </a>
+            <a href="packages.html" class="btn btn-outline-pulse">
+              <i class="bi bi-stars"></i> Explore Packages
+            </a>
+          </div>
+
+          <!-- Welcoming Trust Highlights -->
+          <div class="row g-3 pt-3 border-top" style="border-color: var(--border-color) !important;">
+            <div class="col-6 col-sm-4">
+              <div class="d-flex align-items-center gap-2 hero-feature-pill">
+                <i class="bi bi-people-fill fs-4 text-info"></i>
+                <div>
+                  <h6 class="mb-0 fs-6">Crowd Readers</h6>
+                  <small class="text-muted">All Ages Dancing</small>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4">
+              <div class="d-flex align-items-center gap-2 hero-feature-pill">
+                <i class="bi bi-award-fill fs-4 text-primary"></i>
+                <div>
+                  <h6 class="mb-0 fs-6">Premier Gear</h6>
+                  <small class="text-muted">Pristine Audio</small>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4">
+              <div class="d-flex align-items-center gap-2 hero-feature-pill">
+                <div class="sound-waves">
+                  <span></span><span></span><span></span><span></span><span></span>
+                </div>
+                <div>
+                  <h6 class="mb-0 fs-6">Live Sound Wave</h6>
+                  <small class="text-muted">Harmonious Beats</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Celebration Image with Turntable Accent -->
+        <div class="col-lg-6 position-relative">
+          <div class="hero-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=1200&q=80" 
+                 alt="Professional DJ performing at high-energy music celebration with audience dancing" 
+                 class="hero-img">
+          </div>
+
+          <!-- Signature Vinyl Turntable Visual Floating Accent -->
+          <div class="position-absolute d-none d-xl-flex align-items-center gap-3 p-2 rounded-pill shadow-lg border hero-floating-badge" 
+               style="bottom: -20px; left: -25px; z-index: 5;">
+            <div class="vinyl-disc-graphic" style="width: 62px; height: 62px;">
+              <div class="vinyl-center-label" style="width: 22px; height: 22px; font-size: 0.6rem;">
+                <i class="bi bi-disc-fill"></i>
+              </div>
+            </div>
+            <div class="pe-3">
+              <span class="telemetry-badge py-0 px-2 mb-1" style="font-size: 0.68rem;">LIVE ENTERTAINMENT</span>
+              <div class="fw-bold small">Pure Party Vibes</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Oscilloscope Wave Divider -->
+  <div class="oscilloscope-divider" style="background: var(--surface-color); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+    <svg class="oscilloscope-svg" viewBox="0 0 1200 38" fill="none">
+      <path d="M0,19 L150,19 L180,5 L200,33 L220,10 L240,28 L260,19 L450,19 L480,2 L510,36 L530,8 L550,30 L570,19 L800,19 L830,6 L850,32 L870,12 L890,26 L910,19 L1200,19" stroke="url(#osciGrad)" stroke-width="2.5" stroke-linecap="round"/>
+      <defs>
+        <linearGradient id="osciGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.3"/>
+          <stop offset="30%" stop-color="#8b5cf6"/>
+          <stop offset="70%" stop-color="#06b6d4"/>
+          <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.3"/>
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+
+  <!-- ==================== SECTION 2: CELEBRATIONS WE ELEVATE (PICTURE-FORWARD) ==================== -->
+  <section class="py-5" style="background: var(--surface-color);" id="event-types">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <div class="section-badge">
+          <i class="bi bi-heart-fill text-danger"></i> Events We Love to Amplify
+        </div>
+        <h2 class="section-title">Tailored For Your <span class="text-gradient">Special Occasion</span></h2>
+        <p class="section-subtitle">Whether you're planning a romantic wedding, an epic milestone birthday, or a grand corporate gala, our DJs read the crowd and curate playlists that keep every guest smiling and dancing.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- 1. Weddings -->
+        <div class="col-md-6 col-lg-4">
+          <div class="celebration-card">
+            <div class="celebration-thumb-wrap">
+              <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=600&q=80" 
+                   alt="Joyful bride and groom celebrating with guests and balloons at luxury wedding reception" 
+                   class="celebration-img">
+              <span class="celebration-badge-pill">
+                <i class="bi bi-heart-fill text-danger"></i> Romantic & Joyful
+              </span>
+            </div>
+            <div class="celebration-content">
+              <h4 class="mb-2">Weddings & Receptions</h4>
+              <p class="text-secondary flex-grow-1">
+                Warm ambient uplighting, crystal-clear wireless speech microphones for vows & toasts, and dynamic dance floor mixing that brings grandparents, cousins, and friends together.
+              </p>
+              <div class="pt-3 pb-3 border-top mt-auto" style="border-color: var(--border-color) !important;">
+                <div class="d-flex align-items-center justify-content-between mb-3 text-muted small">
+                  <span><i class="bi bi-people me-1"></i> 50 - 500 Guests</span>
+                  <span class="text-secondary"><i class="bi bi-heart-pulse me-1 text-danger"></i> Romantic Vibe</span>
+                </div>
+                <a href="service-details.html?event=weddings" class="btn btn-sm btn-outline-pulse w-100 justify-content-center">Explore Wedding Ideas <i class="bi bi-arrow-right ms-1"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Birthday Parties -->
+        <div class="col-md-6 col-lg-4">
+          <div class="celebration-card">
+            <div class="celebration-thumb-wrap">
+              <img src="https://images.unsplash.com/photo-1504196606672-aef5c9cefc92?auto=format&fit=crop&w=600&q=80" 
+                   alt="Festive colorful birthday party balloons celebration" 
+                   class="celebration-img">
+              <span class="celebration-badge-pill">
+                <i class="bi bi-stars text-warning"></i> High-Energy Party
+              </span>
+            </div>
+            <div class="celebration-content">
+              <h4 class="mb-2">Birthdays & Anniversaries</h4>
+              <p class="text-secondary flex-grow-1">
+                Warm, room-filling bass, sound-reactive party lights, and custom genre sets spanning EDM, 90s/00s throwbacks, Hip-Hop, House, and Latin chart-toppers tailored to your favorites.
+              </p>
+              <div class="pt-3 pb-3 border-top mt-auto" style="border-color: var(--border-color) !important;">
+                <div class="d-flex align-items-center justify-content-between mb-3 text-muted small">
+                  <span><i class="bi bi-people me-1"></i> 30 - 300 Guests</span>
+                  <span class="text-secondary"><i class="bi bi-lightning-charge me-1 text-warning"></i> Club Bass</span>
+                </div>
+                <a href="service-details.html?event=birthdays" class="btn btn-sm btn-outline-pulse w-100 justify-content-center">Party Rig Details <i class="bi bi-arrow-right ms-1"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Corporate Events -->
+        <div class="col-md-6 col-lg-4">
+          <div class="celebration-card">
+            <div class="celebration-thumb-wrap">
+              <img src="https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?auto=format&fit=crop&w=600&q=80" 
+                   alt="Professional audio production console and sound equipment for corporate events" 
+                   class="celebration-img">
+              <span class="celebration-badge-pill">
+                <i class="bi bi-briefcase-fill text-info"></i> Polished & Sharp
+              </span>
+            </div>
+            <div class="celebration-content">
+              <h4 class="mb-2">Corporate Galas & Summits</h4>
+              <p class="text-secondary flex-grow-1">
+                Crisp speech audio for keynote addresses and executive awards, discreet presentation AV switching, and sophisticated cocktail background music that transitions into an energetic celebration.
+              </p>
+              <div class="pt-3 pb-3 border-top mt-auto" style="border-color: var(--border-color) !important;">
+                <div class="d-flex align-items-center justify-content-between mb-3 text-muted small">
+                  <span><i class="bi bi-people me-1"></i> 100 - 1,500 Guests</span>
+                  <span class="text-secondary"><i class="bi bi-shield-check me-1 text-info"></i> Speech Clarity</span>
+                </div>
+                <a href="service-details.html?event=corporate" class="btn btn-sm btn-outline-pulse w-100 justify-content-center">Corporate Packages <i class="bi bi-arrow-right ms-1"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Private Parties & Lounges -->
+        <div class="col-md-6 col-lg-4">
+          <div class="celebration-card">
+            <div class="celebration-thumb-wrap">
+              <img src="https://images.unsplash.com/photo-1545128485-c400e7702796?auto=format&fit=crop&w=600&q=80" 
+                   alt="Private luxury villa party with pool lighting and DJ booth" 
+                   class="celebration-img">
+              <span class="celebration-badge-pill">
+                <i class="bi bi-gem text-primary"></i> Boutique & Exclusive
+              </span>
+            </div>
+            <div class="celebration-content">
+              <h4 class="mb-2">Private VIP & Pool Parties</h4>
+              <p class="text-secondary flex-grow-1">
+                Sleek minimalist gear footprints, stylish DJ facades that complement your decor, warm pool uplighting, and personalized music curation from tropical chillout to late-night club beats.
+              </p>
+              <div class="pt-3 pb-3 border-top mt-auto" style="border-color: var(--border-color) !important;">
+                <div class="d-flex align-items-center justify-content-between mb-3 text-muted small">
+                  <span><i class="bi bi-people me-1"></i> 20 - 150 Guests</span>
+                  <span class="text-secondary"><i class="bi bi-stars me-1 text-primary"></i> VIP Facade</span>
+                </div>
+                <a href="service-details.html?event=vip" class="btn btn-sm btn-outline-pulse w-100 justify-content-center">VIP Lounge Rigs <i class="bi bi-arrow-right ms-1"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. College Gatherings -->
+        <div class="col-md-6 col-lg-4">
+          <div class="celebration-card">
+            <div class="celebration-thumb-wrap">
+              <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=600&q=80" 
+                   alt="College festival grounds with thousands of students enjoying live sound" 
+                   class="celebration-img">
+              <span class="celebration-badge-pill">
+                <i class="bi bi-lightning-charge-fill text-warning"></i> Massive Hype
+              </span>
+            </div>
+            <div class="celebration-content">
+              <h4 class="mb-2">College & Campus Festivals</h4>
+              <p class="text-secondary flex-grow-1">
+                Powerful concert-grade sound distribution that fills open campus grounds, paired with synchronized light sweeps and high-energy DJs who know how to pump up thousands of students.
+              </p>
+              <div class="pt-3 pb-3 border-top mt-auto" style="border-color: var(--border-color) !important;">
+                <div class="d-flex align-items-center justify-content-between mb-3 text-muted small">
+                  <span><i class="bi bi-people me-1"></i> 500 - 3,000 Guests</span>
+                  <span class="text-secondary"><i class="bi bi-broadcast me-1 text-warning"></i> Festival Hype</span>
+                </div>
+                <a href="service-details.html?event=college" class="btn btn-sm btn-outline-pulse w-100 justify-content-center">Campus Fest Scale <i class="bi bi-arrow-right ms-1"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Concerts & Live Shows -->
+        <div class="col-md-6 col-lg-4">
+          <div class="celebration-card">
+            <div class="celebration-thumb-wrap">
+              <img src="https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?auto=format&fit=crop&w=600&q=80" 
+                   alt="Live concert production with heavy stage illumination and sound arrays" 
+                   class="celebration-img">
+              <span class="celebration-badge-pill">
+                <i class="bi bi-broadcast text-info"></i> Arena Sound
+              </span>
+            </div>
+            <div class="celebration-content">
+              <h4 class="mb-2">Live Concerts & Festivals</h4>
+              <p class="text-secondary flex-grow-1">
+                Touring-grade active line arrays, multi-channel stage boxes, certified sound directors, and dramatic stage lighting designed to deliver an unforgettable arena-scale musical showcase.
+              </p>
+              <div class="pt-3 pb-3 border-top mt-auto" style="border-color: var(--border-color) !important;">
+                <div class="d-flex align-items-center justify-content-between mb-3 text-muted small">
+                  <span><i class="bi bi-people me-1"></i> 1,000+ Guests</span>
+                  <span class="text-secondary"><i class="bi bi-soundwave me-1 text-info"></i> Stadium Line Array</span>
+                </div>
+                <a href="service-details.html?event=concerts" class="btn btn-sm btn-outline-pulse w-100 justify-content-center">Live Production Rigs <i class="bi bi-arrow-right ms-1"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECTION 3: WHAT WE BRING TO YOUR PARTY (CORE SERVICES) ==================== -->
+  <section class="py-5" id="services">
+    <div class="container py-4">
+      <div class="row align-items-end mb-5">
+        <div class="col-lg-8">
+          <div class="section-badge">
+            <i class="bi bi-magic"></i> The Complete Experience
+          </div>
+          <h2 class="section-title mb-0">Everything You Need For a <span class="text-gradient">Flawless Party</span></h2>
+          <p class="text-secondary mt-2 mb-0">From the first cocktail hour track to the final encore, we handle every audio, musical, and lighting detail so you can simply celebrate with your guests.</p>
+        </div>
+        <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+          <a href="services.html" class="btn btn-outline-pulse">
+            <i class="bi bi-grid-3x3-gap-fill me-1"></i> View More Services
+          </a>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <!-- Service 1: DJ Booking -->
+        <div class="col-md-6 col-lg-4">
+          <div class="pulse-card d-flex flex-column h-100 position-relative">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+              <div class="card-icon-box mb-0" style="color: var(--primary-color);">
+                <i class="bi bi-disc-fill"></i>
+              </div>
+              <span class="telemetry-badge">RESIDENT TALENT</span>
+            </div>
+            <h4>Charismatic Event DJs</h4>
+            <p class="small text-secondary flex-grow-1">
+              Experienced crowd readers who know how to build momentum, honor your must-play tracks, and transition seamlessly across genres without cheesy mic chatter.
+            </p>
+            <ul class="list-unstyled small mb-4">
+              <li class="mb-2"><i class="bi bi-check2-circle text-info me-2"></i> Custom playlist consultation & requests</li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-info me-2"></i> Professional MC hosting & ceremony flow</li>
+              <li><i class="bi bi-check2-circle text-info me-2"></i> Smooth dual-deck live club-style mixing</li>
+            </ul>
+            <a href="service-details.html?service=dj" class="btn btn-sm btn-outline-pulse w-100 mt-auto">
+              <span>Service Details</span> <i class="bi bi-arrow-right ms-1"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 2: Sound System Rental -->
+        <div class="col-md-6 col-lg-4">
+          <div class="pulse-card d-flex flex-column h-100 position-relative">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+              <div class="card-icon-box mb-0" style="color: var(--secondary-color);">
+                <i class="bi bi-speaker-fill"></i>
+              </div>
+              <span class="telemetry-badge" style="color: var(--secondary-color); border-color: rgba(6, 182, 212, 0.4);">138 dB SPL</span>
+            </div>
+            <h4>Crystal-Clear Sound Systems</h4>
+            <p class="small text-secondary flex-grow-1">
+              Top-tier concert audio systems engineered to deliver warm, punchy bass on the dance floor while preserving speech clarity so guests can still chat comfortably.
+            </p>
+            <ul class="list-unstyled small mb-4">
+              <li class="mb-2"><i class="bi bi-check2-circle text-info me-2"></i> High-definition active line arrays & subwoofers</li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-info me-2"></i> Shure wireless RF microphones & speech clarity</li>
+              <li><i class="bi bi-check2-circle text-info me-2"></i> Calibrated for zero acoustical feedback</li>
+            </ul>
+            <a href="service-details.html?service=sound" class="btn btn-sm btn-outline-pulse w-100 mt-auto">
+              <span>Service Details</span> <i class="bi bi-arrow-right ms-1"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 3: Intelligent Lighting & FX -->
+        <div class="col-md-6 col-lg-4">
+          <div class="pulse-card d-flex flex-column h-100 position-relative">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+              <div class="card-icon-box mb-0" style="color: var(--amber-accent);">
+                <i class="bi bi-lightbulb-fill"></i>
+              </div>
+              <span class="telemetry-badge amber">DMX512 + FX</span>
+            </div>
+            <h4>Atmospheric Lighting & FX</h4>
+            <p class="small text-secondary flex-grow-1">
+              Transform any venue into a magical setting with color-matched wireless uplighting, sound-reactive moving heads, dancing-on-clouds fog, and indoor cold sparks.
+            </p>
+            <ul class="list-unstyled small mb-4">
+              <li class="mb-2"><i class="bi bi-check2-circle text-info me-2"></i> Architectural wireless battery-powered uplights</li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-info me-2"></i> Music-synchronized moving head dance sweeps</li>
+              <li><i class="bi bi-check2-circle text-info me-2"></i> Non-hazardous cold spark exits & cloud fog</li>
+            </ul>
+            <a href="service-details.html?service=lighting" class="btn btn-sm btn-outline-pulse w-100 mt-auto">
+              <span>Service Details</span> <i class="bi bi-arrow-right ms-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- View More Services Centered CTA Button -->
+      <div class="text-center mt-5">
+        <a href="services.html" class="btn btn-pulse btn-lg px-5 py-3 shadow-lg d-inline-flex align-items-center gap-2">
+          <i class="bi bi-grid-3x3-gap-fill fs-5"></i>
+          <span class="fw-bold">View More Services & Complete Gear</span>
+          <i class="bi bi-arrow-right fs-5"></i>
+        </a>
+        <div class="small text-secondary mt-3">
+          Discover all 6 specialized production categories, stage trussing, live musician hybrid sets & custom package pricing on our <a href="services.html" class="text-info text-decoration-underline fw-semibold">Services Page</a>.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECTION 4: REAL MOMENTS, REAL ENERGY (PHOTO SHOWCASE) ==================== -->
+  <section class="py-5" style="background: var(--surface-color);" id="event-moments">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <div class="section-badge">
+          <i class="bi bi-camera-fill"></i> Real Memories in Motion
+        </div>
+        <h2 class="section-title">Authentic Vibes, <span class="text-gradient">Unforgettable Moments</span></h2>
+        <p class="section-subtitle">Take a look at the energy, packed dance floors, and radiant smiles our DJs and sound engineers deliver week after week.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Moment 1 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="moment-photo-card">
+            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=600&q=80" 
+                 alt="Romantic wedding first dance with low-lying fog and warm lighting">
+            <div class="moment-overlay">
+              <span class="moment-tag"><i class="bi bi-heart-fill"></i> First Dance</span>
+              <h5 class="moment-title">Dancing on Clouds</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Moment 2 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="moment-photo-card">
+            <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=600&q=80" 
+                 alt="Vibrant birthday party crowd jumping to dance music">
+            <div class="moment-overlay">
+              <span class="moment-tag"><i class="bi bi-fire"></i> Party Peak</span>
+              <h5 class="moment-title">Midnight Bass Drop</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Moment 3 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="moment-photo-card">
+            <img src="https://images.unsplash.com/photo-1545128485-c400e7702796?auto=format&fit=crop&w=600&q=80" 
+                 alt="Sunset VIP poolside lounge party with sleek DJ booth">
+            <div class="moment-overlay">
+              <span class="moment-tag"><i class="bi bi-sunset-fill"></i> Sunset Sessions</span>
+              <h5 class="moment-title">Poolside VIP Lounge</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Moment 4 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="moment-photo-card">
+            <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=600&q=80" 
+                 alt="Stadium festival crowd dancing with concert stage lights">
+            <div class="moment-overlay">
+              <span class="moment-tag"><i class="bi bi-stars"></i> Festival Hype</span>
+              <h5 class="moment-title">Mainstage Crowd Joy</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5">
+        <a href="gallery.html" class="btn btn-outline-pulse">
+          <i class="bi bi-images me-2"></i> View Full Photo & Video Gallery
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECTION 5: SIMPLE 3-STEP PARTY JOURNEY ==================== -->
+  <section class="py-5" id="process">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <div class="section-badge">
+          <i class="bi bi-check2-circle"></i> Stress-Free Planning
+        </div>
+        <h2 class="section-title">Your Easy 3-Step <span class="text-gradient">Party Journey</span></h2>
+        <p class="section-subtitle">Booking incredible entertainment should be just as fun and seamless as the party itself. Here is how easy we make it:</p>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        <!-- Step 1 -->
+        <div class="col-md-4">
+          <div class="welcoming-step-card">
+            <div class="step-num-badge">1</div>
+            <h4 class="mb-2">Tell Us Your Vibe</h4>
+            <p class="text-secondary mb-0">
+              Share your event date, venue location, guest count, and musical preferences through our quick consultation form.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="col-md-4">
+          <div class="welcoming-step-card">
+            <div class="step-num-badge" style="background: var(--grad-hover);">2</div>
+            <h4 class="mb-2">We Tailor Your Sound</h4>
+            <p class="text-secondary mb-0">
+              We pair you with the ideal DJ matched to your musical taste and prepare an all-inclusive sound and lighting setup.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="col-md-4">
+          <div class="welcoming-step-card">
+            <div class="step-num-badge" style="background: var(--grad-accent);">3</div>
+            <h4 class="mb-2">Celebrate & Dance</h4>
+            <p class="text-secondary mb-0">
+              Our crew arrives 3 hours early, tests every cable, and runs the entire soundtrack flawlessly so you can enjoy every minute.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECTION 6: SOCIAL PROOF & TESTIMONIALS ==================== -->
+  <section class="py-5" style="background: var(--surface-color);" id="testimonials">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <div class="section-badge">
+          <i class="bi bi-chat-quote-fill"></i> What Happy Hosts Say
+        </div>
+        <h2 class="section-title">Loved by Couples, <span class="text-gradient">Hosts & Planners</span></h2>
+        <p class="section-subtitle">Real experiences from hosts who trusted SonicDrop with the soundtrack of their most important celebrations.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Testimonial 1 -->
+        <div class="col-md-4">
+          <div class="pulse-card h-100 d-flex flex-column">
+            <div class="d-flex text-warning mb-3">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="text-secondary flex-grow-1 mb-4">
+              "SonicDrop made our wedding reception legendary! The dance floor was packed from the very first song until the venue turned on the lights. Their DJ read the crowd perfectly and the cold spark exit was pure magic."
+            </p>
+            <div class="d-flex align-items-center gap-3 pt-3 border-top" style="border-color: var(--border-color) !important;">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=160&q=80" 
+                   alt="Sarah & Henry M. - Wedding Hosts" 
+                   class="testimonial-avatar">
+              <div>
+                <h6 class="mb-0">Sarah & Henry M.</h6>
+                <small class="text-muted">Wedding Reception, Long Island</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="col-md-4">
+          <div class="pulse-card h-100 d-flex flex-column">
+            <div class="d-flex text-warning mb-3">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="text-secondary flex-grow-1 mb-4">
+              "Booked SonicDrop for my 30th birthday party. The sound was incredible, the bass was punchy without hurting our ears, and everyone kept asking where I found such an amazing DJ. Unbelievable experience!"
+            </p>
+            <div class="d-flex align-items-center gap-3 pt-3 border-top" style="border-color: var(--border-color) !important;">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=160&q=80" 
+                   alt="David Ramirez - 30th Birthday Host" 
+                   class="testimonial-avatar">
+              <div>
+                <h6 class="mb-0">David Ramirez</h6>
+                <small class="text-muted">30th Birthday Celebration, Manhattan</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="col-md-4">
+          <div class="pulse-card h-100 d-flex flex-column">
+            <div class="d-flex text-warning mb-3">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="text-secondary flex-grow-1 mb-4">
+              "We hire SonicDrop annually for our company gala. Their team arrives hours ahead of time, speech audio is 100% crystal-clear, and the after-party energy has our entire company on their feet every single year."
+            </p>
+            <div class="d-flex align-items-center gap-3 pt-3 border-top" style="border-color: var(--border-color) !important;">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=160&q=80" 
+                   alt="Elena Torres - Corporate Host" 
+                   class="testimonial-avatar">
+              <div>
+                <h6 class="mb-0">Elena Torres</h6>
+                <small class="text-muted">VP of Culture, Apex Technologies</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECTION 7: HIGH-IMPACT WELCOMING BOOKING CTA BANNER ==================== -->
+  <section class="py-5" id="cta-banner">
+    <div class="container py-4">
+      <div class="p-5 rounded-4 position-relative overflow-hidden" 
+           style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.15) 0%, rgba(6, 182, 212, 0.12) 100%), var(--surface-elevated); border: 1px solid var(--border-color);">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-8">
+            <div class="section-badge mb-2">
+              <i class="bi bi-balloon-heart text-danger"></i> Ready to Celebrate?
+            </div>
+            <h2 class="display-5 fw-bold mb-3">Make Your Celebration Unforgettable.</h2>
+            <p class="lead mb-0 text-secondary">
+              Tell us about your date and musical vision. Popular weekend dates fill fast — reserve your date with our elite DJ team today!
+            </p>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <div class="d-flex flex-column flex-sm-row flex-lg-column gap-3 justify-content-lg-end">
+              <a href="contact.html" class="btn btn-pulse btn-lg">
+                <i class="bi bi-calendar2-check"></i> Check Date Availability
+              </a>
+              <a href="packages.html" class="btn btn-outline-pulse">
+                <i class="bi bi-collection-play"></i> Compare Packages
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== GLOBAL FOOTER ==================== -->
+  <footer class="pulse-footer">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Col 1: Brand & Bio -->
+        <div class="col-lg-4 col-md-6 footer-brand">
+          <a class="navbar-brand mb-3" href="index.html">
+            <span class="brand-icon">
+            <svg class="brand-logo-svg" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" width="26" height="26">
+              <!-- DJ Headphone Arc -->
+              <path d="M6 19.5C6 12 11.4 6 18 6C24.6 6 30 12 30 19.5" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" fill="none"/>
+              <!-- Headphone Ear Cushions -->
+              <rect x="4" y="17.5" width="4" height="9" rx="2" fill="#ffffff"/>
+              <rect x="28" y="17.5" width="4" height="9" rx="2" fill="#ffffff"/>
+              <!-- Pulsing Equalizer Soundwave Bars -->
+              <rect x="11.5" y="18" width="1.8" height="6.5" rx="0.9" fill="#06b6d4"/>
+              <rect x="15" y="15" width="1.8" height="11" rx="0.9" fill="#06b6d4"/>
+              <rect x="19.2" y="15" width="1.8" height="11" rx="0.9" fill="#06b6d4"/>
+              <rect x="22.7" y="18" width="1.8" height="6.5" rx="0.9" fill="#06b6d4"/>
+              <!-- Party Lightning Bolt -->
+              <path d="M19.5 9L14.5 17.5H19L16.5 25L23.5 16H19L21.5 9Z" fill="#fbbf24"/>
+            </svg>
+          </span>
+          <span>Sonic<span class="text-gradient">Drop</span></span>
+          </a>
+          <p class="small text-secondary mb-3">
+            SonicDrop Audio & DJ Production delivers commercial-grade sound engineering, concert sound system hire, DJ talent curation, and architectural lighting for unforgettable events.
+          </p>
+          <div class="social-links">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Services -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-heading">Services</h5>
+          <ul class="footer-links">
+            <li><a href="service-details.html?service=dj">DJ Booking</a></li>
+            <li><a href="services.html">Sound System Rental</a></li>
+            <li><a href="services.html">Stage Lighting Setup</a></li>
+            <li><a href="services.html">Full Event Production</a></li>
+            <li><a href="services.html">Wireless Mic Systems</a></li>
+            <li><a href="services.html">Subwoofer Rental</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Events -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-heading">Events</h5>
+          <ul class="footer-links">
+            <li><a href="service-details.html?event=weddings">Weddings & Galas</a></li>
+            <li><a href="service-details.html?event=birthdays">Birthday Celebrations</a></li>
+            <li><a href="service-details.html?event=corporate">Corporate Summits</a></li>
+            <li><a href="service-details.html?event=vip">Private VIP Parties</a></li>
+            <li><a href="service-details.html?event=concerts">Concerts & Festivals</a></li>
+            <li><a href="service-details.html?event=college">College Gatherings</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Quick Navigation -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-heading">Company</h5>
+          <ul class="footer-links">
+            <li><a href="about.html">About Our Story</a></li>
+            <li><a href="packages.html">Tiered Packages</a></li>
+            <li><a href="gallery.html">Event Gallery</a></li>
+            <li><a href="blog.html">Acoustic Blog</a></li>
+            <li><a href="contact.html">Contact & Booking</a></li>
+            <li><a href="coming-soon.html">New Gear Launch</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 5: Contact & Newsletter -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-heading">Contact Direct</h5>
+          <div class="footer-contact-item">
+            <i class="bi bi-telephone"></i>
+            <span>+1 (800) 456-PULSE</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope"></i>
+            <span>bookings@sonicdrop.audio</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt"></i>
+            <span>Audio Studio 4B, Sound District, NY</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-clock"></i>
+            <span>Mon - Sat: 9AM - 8PM</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Copyright -->
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+            &copy; 2026 SonicDrop Audio & DJ Production. All Rights Reserved.
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <a href="contact.html" class="me-3">Privacy Policy</a>
+            <a href="contact.html" class="me-3">Terms & Rental Agreement</a>
+            <a href="contact.html">Safety & Noise Compliance</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" type="button" aria-label="Back to top">
+    <i class="bi bi-chevron-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/rtl.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/forms.js"></script>
+</body>
+</html>

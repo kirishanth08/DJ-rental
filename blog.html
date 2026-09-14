@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SonicDrop | Acoustic Insights & Event Production Blog</title>
+  <meta name="description" content="Technical acoustic guides, DJ track programming strategies, wireless RF etiquette, and event lighting advice from SonicDrop's audio engineers.">
+  <meta name="keywords" content="DJ blog, sound system advice, event lighting guide, wedding music tips, stage audio production blog">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="SonicDrop | Acoustic Insights & Event Production Blog">
+  <meta property="og:description" content="Pro audio and lighting insights for event planners and music enthusiasts.">
+  <meta property="og:type" content="website">
+
+  <!-- Bootstrap 5 CSS -->
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Custom Core & Responsive CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+  <!-- ==================== GLOBAL NAVBAR ==================== -->
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg pulse-navbar" aria-label="Main Navigation">
+      <div class="container">
+        <!-- Brand Logo -->
+        <a class="navbar-brand" href="index.html">
+          <span class="brand-icon">
+            <svg class="brand-logo-svg" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" width="26" height="26">
+              <!-- DJ Headphone Arc -->
+              <path d="M6 19.5C6 12 11.4 6 18 6C24.6 6 30 12 30 19.5" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" fill="none"/>
+              <!-- Headphone Ear Cushions -->
+              <rect x="4" y="17.5" width="4" height="9" rx="2" fill="#ffffff"/>
+              <rect x="28" y="17.5" width="4" height="9" rx="2" fill="#ffffff"/>
+              <!-- Pulsing Equalizer Soundwave Bars -->
+              <rect x="11.5" y="18" width="1.8" height="6.5" rx="0.9" fill="#06b6d4"/>
+              <rect x="15" y="15" width="1.8" height="11" rx="0.9" fill="#06b6d4"/>
+              <rect x="19.2" y="15" width="1.8" height="11" rx="0.9" fill="#06b6d4"/>
+              <rect x="22.7" y="18" width="1.8" height="6.5" rx="0.9" fill="#06b6d4"/>
+              <!-- Party Lightning Bolt -->
+              <path d="M19.5 9L14.5 17.5H19L16.5 25L23.5 16H19L21.5 9Z" fill="#fbbf24"/>
+            </svg>
+          </span>
+          <span>Sonic<span class="text-gradient">Drop</span></span>
+        </a>
+
+        <!-- Mobile Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#pulseNavMenu" aria-controls="pulseNavMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list"></i>
+        </button>
+
+        <!-- Nav Items -->
+        <div class="collapse navbar-collapse" id="pulseNavMenu">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <!-- Home Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Home
+              </a>
+              <ul class="dropdown-menu minimal-dropdown" aria-labelledby="homeDropdown">
+                <li><a class="dropdown-item minimal-dropdown-item" href="index.html">Home 1 — Party & DJ</a></li>
+                <li><a class="dropdown-item minimal-dropdown-item" href="home-2.html">Home 2 — Touring & Stage</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="packages.html">Packages</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+
+          <!-- Action Controls -->
+          <div class="nav-actions">
+            <!-- Dark/Light Mode Button -->
+            <button class="control-btn theme-toggle-btn" type="button" aria-label="Toggle theme">
+              <i class="bi bi-sun-fill"></i>
+            </button>
+
+            <!-- RTL Toggle Button -->
+            <button class="rtl-toggle-btn" type="button" aria-label="Toggle direction">
+              <i class="bi bi-translate"></i>
+              <span class="rtl-text">RTL</span>
+            </button>
+
+            <!-- Primary Action CTA -->
+            <a href="contact.html" class="btn btn-pulse">
+              <i class="bi bi-calendar-event"></i> Book a DJ
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ==================== SECTION 1: PAGE HERO ==================== -->
+  <section class="page-hero hero-with-bg" style="background-image: url('https://images.unsplash.com/photo-1526478806334-5fd488fcaabc?auto=format&fit=crop&w=1920&q=80');">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <ul class="breadcrumb-list mb-3">
+            <li><a href="index.html">Home</a></li>
+            <li><i class="bi bi-chevron-right text-muted small"></i></li>
+            <li class="active">Audio Blog & Guides</li>
+          </ul>
+          <!-- Telemetry Badges -->
+          <div class="d-flex flex-wrap gap-2 mb-2">
+            <span class="telemetry-badge"><span class="status-dot-live"></span> TECH KNOWLEDGE BASE</span>
+            <span class="telemetry-badge"><i class="bi bi-sliders"></i> PRO AUDIO GUIDES</span>
+            <span class="telemetry-badge amber"><i class="bi bi-book"></i> PEER REVIEWED</span>
+          </div>
+          <h1 class="page-hero-title">Acoustic Insights & <span class="text-gradient">Event Guides</span></h1>
+          <p class="lead text-secondary mb-0">
+            Expert knowledge on speaker positioning, playlist architecture, DMX programming, and corporate audio protocols written by working sound professionals.
+          </p>
+        </div>
+        <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+          <span class="badge rounded-pill px-3 py-2" style="background: var(--tag-bg); color: var(--secondary-color); border: 1px solid var(--border-color);">
+            <i class="bi bi-journal-text me-1"></i> Working Engineer Insights
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Oscilloscope Wave Divider -->
+  <div class="oscilloscope-divider" style="background: var(--surface-color); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+    <svg class="oscilloscope-svg" viewBox="0 0 1200 38" fill="none">
+      <path d="M0,19 L110,19 L140,5 L160,33 L180,9 L200,28 L220,19 L410,19 L440,2 L470,36 L490,8 L510,30 L530,19 L760,19 L790,6 L810,32 L830,12 L850,26 L870,19 L1200,19" stroke="url(#osciGradBlog)" stroke-width="2.5" stroke-linecap="round"/>
+      <defs>
+        <linearGradient id="osciGradBlog" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.3"/>
+          <stop offset="50%" stop-color="#f59e0b"/>
+          <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.3"/>
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+
+  <!-- ==================== SECTION 2: FEATURED LEAD ARTICLE SPOTLIGHT ==================== -->
+  <section class="py-5" id="featured-article">
+    <div class="container py-4">
+      <div class="pulse-card p-4 p-md-5">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="rounded-4 overflow-hidden border shadow" style="border-color: var(--border-color) !important; height: 360px;">
+              <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1200&q=80" 
+                   alt="Sound engineer console and studio monitors adjusting room acoustic response" 
+                   class="w-100 h-100" style="object-fit: cover;">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="d-flex align-items-center gap-3 mb-2">
+              <span class="badge px-3 py-1" style="background: var(--tag-bg); color: var(--primary-color);">EDITOR'S CHOICE</span>
+              <small class="text-muted"><i class="bi bi-clock me-1"></i> 7 min read</small>
+            </div>
+            <h2 class="h2 fw-bold mb-3">
+              <a href="blog-details.html?id=sound-dispersion" style="color: var(--text-primary);">How to Calculate Sound Dispersion for Glass Atriums and Outdoor Venues</a>
+            </h2>
+            <p class="text-secondary mb-4">
+              Glass atriums create chaotic reflections, while open outdoor venues swallow bass frequencies. Learn the mathematics of delay fills, wave cancelation, and directional speaker arrays.
+            </p>
+            <div class="d-flex align-items-center justify-content-between pt-3 border-top" style="border-color: var(--border-color) !important;">
+              <div class="d-flex align-items-center gap-2">
+                <div class="rounded-circle text-white fw-bold d-flex align-items-center justify-content-center" style="width: 38px; height: 38px; background: var(--grad-primary);">
+                  ER
+                </div>
+                <div>
+                  <h6 class="mb-0 fs-6" style="color: var(--text-primary); font-weight: 700;">Elena Rostova</h6>
+                  <small class="text-secondary">Lead Sound Engineer</small>
+                </div>
+              </div>
+              <a href="blog-details.html?id=sound-dispersion" class="btn btn-sm btn-pulse">Read Deep-Dive <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECTION 3: FILTERABLE ARTICLES GRID (6 ARTICLES) ==================== -->
+  <section class="py-5" style="background: var(--surface-color);" id="articles-grid">
+    <div class="container py-4">
+      <div class="text-center mb-4">
+        <div class="section-badge">
+          <i class="bi bi-collection"></i> Knowledge Base
+        </div>
+        <h2 class="section-title">Latest Acoustic & <span class="text-gradient">Production Articles</span></h2>
+        <p class="text-secondary mb-0">Browse our latest guides or search by topic, acoustic parameter, or event type.</p>
+      </div>
+
+      <!-- Search & Category Filter Toolbar (Placed after Main Blog) -->
+      <div class="blog-filter-toolbar mb-5 p-3 p-md-4 rounded-4" style="background: var(--surface-elevated); border: 1px solid var(--border-color);">
+        <div class="row g-3 align-items-center justify-content-between">
+          <div class="col-lg-7">
+            <!-- Category Filter Pills with Icons -->
+            <div class="d-flex flex-wrap gap-2">
+              <button type="button" class="filter-btn blog-cat-pill active" data-category="all"><i class="bi bi-grid-fill me-1"></i> All Topics</button>
+              <button type="button" class="filter-btn blog-cat-pill" data-category="acoustics"><i class="bi bi-soundwave me-1"></i> Acoustics & Sound</button>
+              <button type="button" class="filter-btn blog-cat-pill" data-category="dj"><i class="bi bi-disc me-1"></i> DJ Strategy</button>
+              <button type="button" class="filter-btn blog-cat-pill" data-category="lighting"><i class="bi bi-lightbulb me-1"></i> Lighting</button>
+              <button type="button" class="filter-btn blog-cat-pill" data-category="wedding"><i class="bi bi-heart me-1"></i> Weddings</button>
+              <button type="button" class="filter-btn blog-cat-pill" data-category="corporate"><i class="bi bi-building me-1"></i> Corporate AV</button>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <!-- Search Input Box -->
+            <div class="position-relative">
+              <input type="text" id="blogSearchInput" class="pulse-input" placeholder="Search guides, gear, acoustics..." aria-label="Search articles" style="padding-left: 2.75rem;">
+              <i class="bi bi-search position-absolute text-muted" style="top: 50%; left: 1rem; transform: translateY(-50%); font-size: 1.1rem;"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- No Results Container -->
+      <div id="blogNoResults" class="alert alert-info text-center p-5 rounded-4 mb-4" style="display: none; background: var(--surface-elevated); border: 1px solid var(--border-color); color: var(--text-primary);">
+        <i class="bi bi-search fs-1 mb-3 text-gradient d-block"></i>
+        <h4>No matching articles found</h4>
+        <p class="text-secondary mb-0">Try searching for keywords like "wedding", "subwoofer", "lighting", or "DMX".</p>
+      </div>
+
+      <div class="row g-4" id="articlesContainer">
+        <!-- Article 1 -->
+        <div class="col-md-6 col-lg-4 blog-article-item" data-category="wedding">
+          <div class="blog-card">
+            <div class="blog-thumb-wrap">
+              <span class="blog-badge-tag">Weddings</span>
+              <img src="https://images.unsplash.com/photo-1516900557549-41557d405adf?auto=format&fit=crop&w=600&q=80" alt="Wedding sound setup and microphone ceremony guide" class="blog-thumb">
+            </div>
+            <div class="blog-body">
+              <div class="blog-meta">
+                <span><i class="bi bi-calendar3"></i> Sep 18, 2026</span>
+                <span><i class="bi bi-clock"></i> 5 min read</span>
+              </div>
+              <h5 class="blog-title"><a href="blog-details.html?id=wedding-sound">The 5 Costly Sound Mistakes Made at Wedding Ceremonies</a></h5>
+              <p class="small text-secondary mb-4">Wind noise, wireless microphone dropouts, and feedback can ruin the vow exchange. Here is how professional engineers prevent them.</p>
+              <div class="mt-auto pt-3 border-top d-flex justify-content-between align-items-center" style="border-color: var(--border-color) !important;">
+                <span class="blog-author"><span class="blog-author-by">By</span> <strong class="blog-author-name">Marcus Vance</strong></span>
+                <a href="blog-details.html?id=wedding-sound" class="fw-bold small text-info">Read Article <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 2 -->
+        <div class="col-md-6 col-lg-4 blog-article-item" data-category="acoustics">
+          <div class="blog-card">
+            <div class="blog-thumb-wrap">
+              <span class="blog-badge-tag">Acoustics</span>
+              <img src="https://images.unsplash.com/photo-1501612780327-45045538702b?auto=format&fit=crop&w=600&q=80" alt="Audio subwoofer cabinets and bass frequency dispersion" class="blog-thumb">
+            </div>
+            <div class="blog-body">
+              <div class="blog-meta">
+                <span><i class="bi bi-calendar3"></i> Sep 10, 2026</span>
+                <span><i class="bi bi-clock"></i> 6 min read</span>
+              </div>
+              <h5 class="blog-title"><a href="blog-details.html?id=cardioid-subwoofers">Why Cardioid Subwoofer Arrays Change Everything for Dance Floors</a></h5>
+              <p class="small text-secondary mb-4">Understanding reverse-phase cancellation to keep heavy sub-bass on the dancers while leaving the DJ booth and staff areas quiet.</p>
+              <div class="mt-auto pt-3 border-top d-flex justify-content-between align-items-center" style="border-color: var(--border-color) !important;">
+                <span class="blog-author"><span class="blog-author-by">By</span> <strong class="blog-author-name">Elena Rostova</strong></span>
+                <a href="blog-details.html?id=cardioid-subwoofers" class="fw-bold small text-info">Read Article <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 3 -->
+        <div class="col-md-6 col-lg-4 blog-article-item" data-category="lighting">
+          <div class="blog-card">
+            <div class="blog-thumb-wrap">
+              <span class="blog-badge-tag">Lighting</span>
+              <img src="https://images.unsplash.com/photo-1518972559570-7cc1309f3229?auto=format&fit=crop&w=600&q=80" alt="Moving head lighting fixtures throwing color beams onto ceiling" class="blog-thumb">
+            </div>
+            <div class="blog-body">
+              <div class="blog-meta">
+                <span><i class="bi bi-calendar3"></i> Aug 28, 2026</span>
+                <span><i class="bi bi-clock"></i> 4 min read</span>
+              </div>
+              <h5 class="blog-title"><a href="blog-details.html?id=dmx-lighting-101">DMX Lighting 101: Moving Heads vs. Static Architectural Washes</a></h5>
+              <p class="small text-secondary mb-4">How to program dynamic light scenes that synchronize automatically with music peaks without inducing visual fatigue.</p>
+              <div class="mt-auto pt-3 border-top d-flex justify-content-between align-items-center" style="border-color: var(--border-color) !important;">
+                <span class="blog-author"><span class="blog-author-by">By</span> <strong class="blog-author-name">Damon Brooks</strong></span>
+                <a href="blog-details.html?id=dmx-lighting-101" class="fw-bold small text-info">Read Article <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 4 -->
+        <div class="col-md-6 col-lg-4 blog-article-item" data-category="corporate">
+          <div class="blog-card">
+            <div class="blog-thumb-wrap">
+              <span class="blog-badge-tag">Corporate AV</span>
+              <img src="https://images.unsplash.com/photo-1481886756534-97af88ccb438?auto=format&fit=crop&w=600&q=80" alt="Corporate convention microphone and sound monitoring console" class="blog-thumb">
+            </div>
+            <div class="blog-body">
+              <div class="blog-meta">
+                <span><i class="bi bi-calendar3"></i> Aug 19, 2026</span>
+                <span><i class="bi bi-clock"></i> 5 min read</span>
+              </div>
+              <h5 class="blog-title"><a href="blog-details.html?id=corporate-audio-rider">The Audio Rider Checklist for High-Stakes Corporate Summits</a></h5>
+              <p class="small text-secondary mb-4">Ensuring seamless wireless RF diversity, press-feed multi-boxes, and backup presentation laptops for executive leadership.</p>
+              <div class="mt-auto pt-3 border-top d-flex justify-content-between align-items-center" style="border-color: var(--border-color) !important;">
+                <span class="blog-author"><span class="blog-author-by">By</span> <strong class="blog-author-name">Sarah Chen</strong></span>
+                <a href="blog-details.html?id=corporate-audio-rider" class="fw-bold small text-info">Read Article <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 5 -->
+        <div class="col-md-6 col-lg-4 blog-article-item" data-category="dj">
+          <div class="blog-card">
+            <div class="blog-thumb-wrap">
+              <span class="blog-badge-tag">DJ Strategy</span>
+              <img src="https://images.unsplash.com/photo-1468164016595-6108e4c60c8b?auto=format&fit=crop&w=600&q=80" alt="DJ looking out over dancing crowd reading room energy" class="blog-thumb">
+            </div>
+            <div class="blog-body">
+              <div class="blog-meta">
+                <span><i class="bi bi-calendar3"></i> Aug 05, 2026</span>
+                <span><i class="bi bi-clock"></i> 6 min read</span>
+              </div>
+              <h5 class="blog-title"><a href="blog-details.html?id=reading-the-room">Reading the Room: The Psychological Science of DJ Set Building</a></h5>
+              <p class="small text-secondary mb-4">Why playing your biggest dance anthem too early burns out a crowd, and how harmonic progression keeps people dancing for 4+ hours.</p>
+              <div class="mt-auto pt-3 border-top d-flex justify-content-between align-items-center" style="border-color: var(--border-color) !important;">
+                <span class="blog-author"><span class="blog-author-by">By</span> <strong class="blog-author-name">Marcus Vance</strong></span>
+                <a href="blog-details.html?id=reading-the-room" class="fw-bold small text-info">Read Article <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 6 -->
+        <div class="col-md-6 col-lg-4 blog-article-item" data-category="acoustics">
+          <div class="blog-card">
+            <div class="blog-thumb-wrap">
+              <span class="blog-badge-tag">Hardware Safety</span>
+              <img src="assets/img/power-conditioning-rig.jpg" alt="Stage power conditioning distro and voltage regulation rack for outdoor audio rigs" class="blog-thumb">
+            </div>
+            <div class="blog-body">
+              <div class="blog-meta">
+                <span><i class="bi bi-calendar3"></i> Jul 22, 2026</span>
+                <span><i class="bi bi-clock"></i> 7 min read</span>
+              </div>
+              <h5 class="blog-title"><a href="blog-details.html?id=power-conditioning">Power Conditioning & Voltage Drop Protection for Outdoor Rigs</a></h5>
+              <p class="small text-secondary mb-4">How voltage spikes from portable generators can fry digital mixers, and the isolation transformers needed for clean audio power.</p>
+              <div class="mt-auto pt-3 border-top d-flex justify-content-between align-items-center" style="border-color: var(--border-color) !important;">
+                <span class="blog-author"><span class="blog-author-by">By</span> <strong class="blog-author-name">Elena Rostova</strong></span>
+                <a href="blog-details.html?id=power-conditioning" class="fw-bold small text-info">Read Article <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECTION 4: TRENDING PRODUCTION TOPICS ==================== -->
+  <section class="py-5" id="trending-topics">
+    <div class="container py-4">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5">
+          <div class="section-badge">
+            <i class="bi bi-fire"></i> Trending Innovations
+          </div>
+          <h2 class="section-title">2026 Live Audio & Visual <span class="text-gradient">Breakthroughs</span></h2>
+          <p class="text-secondary">
+            Keep pace with evolving technology in event production. From silent disco multi-channel transmissions to battery-powered wireless DMX fixtures.
+          </p>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <div class="p-3 rounded-4" style="background: var(--surface-color); border: 1px solid var(--border-color);">
+                <span class="badge bg-info text-dark mb-2">WIRELESS DMX</span>
+                <h6 class="fw-bold mb-1">Zero-Cable Lighting Networks</h6>
+                <p class="small text-secondary mb-0">Battery uplighting controlled via 2.4GHz wireless mesh protocols.</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="p-3 rounded-4" style="background: var(--surface-color); border: 1px solid var(--border-color);">
+                <span class="badge bg-primary text-white mb-2">IMMERSIVE 3D</span>
+                <h6 class="fw-bold mb-1">Spatial Audio For Galas</h6>
+                <p class="small text-secondary mb-0">Multi-point sound positioning creating 360-degree sonic landscapes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECTION 5: BACKSTAGE NEWSLETTER CARD ==================== -->
+  <section class="py-5" style="background: var(--surface-color);" id="blog-newsletter">
+    <div class="container py-4">
+      <div class="pulse-card p-4 p-md-5" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(6, 182, 212, 0.1) 100%), var(--surface-color);">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-7">
+            <h3 class="fw-bold mb-2">Get Our Monthly Acoustic Technical Whitepapers</h3>
+            <p class="text-secondary mb-0">Join 3,400+ event producers, hotel banquet managers, and audio nerds who receive our exclusive hardware benchmarking reports.</p>
+          </div>
+          <div class="col-lg-5">
+            <form class="pulse-newsletter-form d-flex gap-2">
+              <input type="email" class="pulse-input" placeholder="Your work email..." required>
+              <button type="submit" class="btn btn-pulse flex-shrink-0">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECTION 6: EVENT SOUND CONSULTATION CTA ==================== -->
+  <section class="py-5" id="blog-cta">
+    <div class="container py-4">
+      <div class="p-5 rounded-4 text-center" style="background: var(--surface-elevated); border: 1px solid var(--border-color);">
+        <h2 class="display-6 fw-bold mb-3">Have Questions About Your Venue's Audio Setup?</h2>
+        <p class="lead text-secondary mx-auto mb-4" style="max-width: 650px;">
+          Our audio engineers are always ready to analyze room dimensions, review acoustics, and assemble equipment proposals.
+        </p>
+        <div class="d-flex justify-content-center gap-3 flex-wrap">
+          <a href="contact.html" class="btn btn-pulse btn-lg">
+            <i class="bi bi-chat-left-dots"></i> Consult an Audio Engineer
+          </a>
+          <a href="services.html" class="btn btn-outline-pulse btn-lg">
+            <i class="bi bi-speaker"></i> Explore Equipment Fleet
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== GLOBAL FOOTER ==================== -->
+  <footer class="pulse-footer">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Col 1: Brand & Bio -->
+        <div class="col-lg-4 col-md-6 footer-brand">
+          <a class="navbar-brand mb-3" href="index.html">
+            <span class="brand-icon">
+            <svg class="brand-logo-svg" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" width="26" height="26">
+              <!-- DJ Headphone Arc -->
+              <path d="M6 19.5C6 12 11.4 6 18 6C24.6 6 30 12 30 19.5" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" fill="none"/>
+              <!-- Headphone Ear Cushions -->
+              <rect x="4" y="17.5" width="4" height="9" rx="2" fill="#ffffff"/>
+              <rect x="28" y="17.5" width="4" height="9" rx="2" fill="#ffffff"/>
+              <!-- Pulsing Equalizer Soundwave Bars -->
+              <rect x="11.5" y="18" width="1.8" height="6.5" rx="0.9" fill="#06b6d4"/>
+              <rect x="15" y="15" width="1.8" height="11" rx="0.9" fill="#06b6d4"/>
+              <rect x="19.2" y="15" width="1.8" height="11" rx="0.9" fill="#06b6d4"/>
+              <rect x="22.7" y="18" width="1.8" height="6.5" rx="0.9" fill="#06b6d4"/>
+              <!-- Party Lightning Bolt -->
+              <path d="M19.5 9L14.5 17.5H19L16.5 25L23.5 16H19L21.5 9Z" fill="#fbbf24"/>
+            </svg>
+          </span>
+          <span>Sonic<span class="text-gradient">Drop</span></span>
+          </a>
+          <p class="small text-secondary mb-3">
+            SonicDrop Audio & DJ Production delivers commercial-grade sound engineering, concert sound system hire, DJ talent curation, and architectural lighting for unforgettable events.
+          </p>
+          <div class="social-links">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Services -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-heading">Services</h5>
+          <ul class="footer-links">
+            <li><a href="service-details.html?service=dj">DJ Booking</a></li>
+            <li><a href="services.html">Sound System Rental</a></li>
+            <li><a href="services.html">Stage Lighting Setup</a></li>
+            <li><a href="services.html">Full Event Production</a></li>
+            <li><a href="services.html">Wireless Mic Systems</a></li>
+            <li><a href="services.html">Subwoofer Rental</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Events -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-heading">Events</h5>
+          <ul class="footer-links">
+            <li><a href="packages.html">Weddings & Galas</a></li>
+            <li><a href="packages.html">Birthday Celebrations</a></li>
+            <li><a href="packages.html">Corporate Summits</a></li>
+            <li><a href="packages.html">Private VIP Parties</a></li>
+            <li><a href="packages.html">Concerts & Festivals</a></li>
+            <li><a href="packages.html">College Gatherings</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Quick Navigation -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-heading">Company</h5>
+          <ul class="footer-links">
+            <li><a href="about.html">About Our Story</a></li>
+            <li><a href="packages.html">Tiered Packages</a></li>
+            <li><a href="gallery.html">Event Gallery</a></li>
+            <li><a href="blog.html">Acoustic Blog</a></li>
+            <li><a href="contact.html">Contact & Booking</a></li>
+            <li><a href="coming-soon.html">New Gear Launch</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 5: Contact & Newsletter -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-heading">Contact Direct</h5>
+          <div class="footer-contact-item">
+            <i class="bi bi-telephone"></i>
+            <span>+1 (800) 456-PULSE</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope"></i>
+            <span>bookings@sonicdrop.audio</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt"></i>
+            <span>Audio Studio 4B, Sound District, NY</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-clock"></i>
+            <span>Mon - Sat: 9AM - 8PM</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Copyright -->
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+            &copy; 2026 SonicDrop Audio & DJ Production. All Rights Reserved.
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <a href="contact.html" class="me-3">Privacy Policy</a>
+            <a href="contact.html" class="me-3">Terms & Rental Agreement</a>
+            <a href="contact.html">Safety & Noise Compliance</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" type="button" aria-label="Back to top">
+    <i class="bi bi-chevron-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/rtl.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/filters.js"></script>
+  <script src="assets/js/forms.js"></script>
+</body>
+</html>

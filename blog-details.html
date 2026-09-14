@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SonicDrop | Calculating Sound Dispersion for Glass Atriums & Outdoor Venues</title>
+  <meta name="description" content="Technical guide on delay fills, inverse-square law, and acoustic modeling for challenging event spaces by lead sound engineer Elena Rostova.">
+  <meta name="keywords" content="sound dispersion guide, event acoustics, delay speakers calculation, glass atrium sound">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="SonicDrop | Calculating Sound Dispersion for Challenging Venues">
+  <meta property="og:description" content="Master delay fills, inverse-square law, and speaker positioning for reverberant spaces.">
+  <meta property="og:type" content="article">
+
+  <!-- Bootstrap 5 CSS -->
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Custom Core & Responsive CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+  <!-- ==================== GLOBAL NAVBAR ==================== -->
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg pulse-navbar" aria-label="Main Navigation">
+      <div class="container">
+        <!-- Brand Logo -->
+        <a class="navbar-brand" href="index.html">
+          <span class="brand-icon">
+            <svg class="brand-logo-svg" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" width="26" height="26">
+              <!-- DJ Headphone Arc -->
+              <path d="M6 19.5C6 12 11.4 6 18 6C24.6 6 30 12 30 19.5" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" fill="none"/>
+              <!-- Headphone Ear Cushions -->
+              <rect x="4" y="17.5" width="4" height="9" rx="2" fill="#ffffff"/>
+              <rect x="28" y="17.5" width="4" height="9" rx="2" fill="#ffffff"/>
+              <!-- Pulsing Equalizer Soundwave Bars -->
+              <rect x="11.5" y="18" width="1.8" height="6.5" rx="0.9" fill="#06b6d4"/>
+              <rect x="15" y="15" width="1.8" height="11" rx="0.9" fill="#06b6d4"/>
+              <rect x="19.2" y="15" width="1.8" height="11" rx="0.9" fill="#06b6d4"/>
+              <rect x="22.7" y="18" width="1.8" height="6.5" rx="0.9" fill="#06b6d4"/>
+              <!-- Party Lightning Bolt -->
+              <path d="M19.5 9L14.5 17.5H19L16.5 25L23.5 16H19L21.5 9Z" fill="#fbbf24"/>
+            </svg>
+          </span>
+          <span>Sonic<span class="text-gradient">Drop</span></span>
+        </a>
+
+        <!-- Mobile Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#pulseNavMenu" aria-controls="pulseNavMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list"></i>
+        </button>
+
+        <!-- Nav Items -->
+        <div class="collapse navbar-collapse" id="pulseNavMenu">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <!-- Home Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Home
+              </a>
+              <ul class="dropdown-menu minimal-dropdown" aria-labelledby="homeDropdown">
+                <li><a class="dropdown-item minimal-dropdown-item" href="index.html">Home 1 — Party & DJ</a></li>
+                <li><a class="dropdown-item minimal-dropdown-item" href="home-2.html">Home 2 — Touring & Stage</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="packages.html">Packages</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+
+          <!-- Action Controls -->
+          <div class="nav-actions">
+            <!-- Dark/Light Mode Button -->
+            <button class="control-btn theme-toggle-btn" type="button" aria-label="Toggle theme">
+              <i class="bi bi-sun-fill"></i>
+            </button>
+
+            <!-- RTL Toggle Button -->
+            <button class="rtl-toggle-btn" type="button" aria-label="Toggle direction">
+              <i class="bi bi-translate"></i>
+              <span class="rtl-text">RTL</span>
+            </button>
+
+            <!-- Primary Action CTA -->
+            <a href="contact.html" class="btn btn-pulse">
+              <i class="bi bi-calendar-event"></i> Book a DJ
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ==================== SECTION 1: ARTICLE HERO & METADATA ==================== -->
+  <section class="page-hero hero-with-bg" id="articleHero" style="background-image: url('https://images.unsplash.com/photo-1517230878791-4d28214057c2?auto=format&fit=crop&w=1920&q=80');">
+    <div class="container">
+      <ul class="breadcrumb-list mb-3">
+        <li><a href="index.html">Home</a></li>
+        <li><i class="bi bi-chevron-right text-muted small"></i></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><i class="bi bi-chevron-right text-muted small"></i></li>
+        <li class="active" id="articleBreadcrumbActive">Article</li>
+      </ul>
+      <div class="d-flex align-items-center gap-3 mb-3 flex-wrap">
+        <span class="badge px-3 py-1" id="articleCategoryBadge" style="background: var(--tag-bg); color: var(--primary-color);">ACOUSTICS & ENGINEERING</span>
+        <span class="text-secondary small" id="articleReadTime"><i class="bi bi-clock me-1"></i> 7 min read</span>
+        <span class="text-secondary small" id="articleDate"><i class="bi bi-calendar3 me-1"></i> September 14, 2026</span>
+      </div>
+      <h1 class="page-hero-title mb-4" id="articleTitle" style="max-width: 960px;">
+        How to Calculate Sound Dispersion for Glass Atriums and Outdoor Venues
+      </h1>
+      <div class="d-flex align-items-center gap-3">
+        <div class="rounded-circle text-white fw-bold d-flex align-items-center justify-content-center" id="articleAuthorInitials" style="width: 46px; height: 46px; background: var(--grad-primary); font-size: 1.1rem;">
+          ER
+        </div>
+        <div>
+          <h6 class="mb-0 text-white" id="articleAuthorName">Elena Rostova</h6>
+          <small class="text-muted" id="articleAuthorRole">Lead Sound Engineer, SonicDrop Audio</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECTION 2: ARTICLE BODY & INTERACTIVE SIDEBAR ==================== -->
+  <section class="py-5" style="background: var(--background-color);" id="articleContentSection">
+    <div class="container py-3">
+      <div class="row g-5">
+        <!-- Main Article Column -->
+        <div class="col-lg-8">
+          <!-- Featured Image Container -->
+          <div class="rounded-4 overflow-hidden border mb-4 shadow-lg" style="border-color: var(--border-color) !important; max-height: 480px;">
+            <img id="articleFeaturedImg" src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=1200&q=80" 
+                 alt="Digital audio mixing board console faders close-up with neon lighting reflections" 
+                 class="w-100 h-100" style="object-fit: cover; max-height: 480px;">
+          </div>
+
+          <!-- Editorial Lead -->
+          <p class="lead mb-4" id="articleLead" style="color: var(--text-primary); font-weight: 500; line-height: 1.8;">
+            Every audio engineer dreads hearing the words: "Our reception is in a modern architectural venue featuring 30-foot floor-to-ceiling glass windows and marble floors." Glass and polished stone possess absorption coefficients near zero, creating reverberation times exceeding 3.5 seconds.
+          </p>
+
+          <!-- Dynamic Rich Article Body HTML -->
+          <div id="articleBodyContent">
+            <!-- Populated dynamically by blog-details.js -->
+          </div>
+
+          <!-- Author Bio Box -->
+          <div class="article-author-bio pulse-card p-4 my-4">
+            <div class="d-flex align-items-center gap-4 flex-column flex-sm-row text-center text-sm-start">
+              <div class="rounded-circle text-white fw-bold d-flex align-items-center justify-content-center flex-shrink-0 mx-auto mx-sm-0" style="width: 70px; height: 70px; font-size: 1.5rem; background: var(--grad-primary);">
+                SD
+              </div>
+              <div>
+                <h5 class="mb-1 text-white">SonicDrop Acoustic Engineering Desk</h5>
+                <p class="small text-info fw-bold mb-2">Concert Sound Systems & Festival Production</p>
+                <p class="small text-secondary mb-0">
+                  Our engineering team brings two decades of field experience designing Dante networked audio, cardioid sub arrays, and dynamic DMX lighting environments for high-profile weddings, corporate summits, and festival stages.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact / Question Form -->
+          <div class="article-question-card pulse-card p-4 p-md-5 mb-4">
+            <h4 class="mb-3 text-white">Ask Our Audio Team a Question</h4>
+            <p class="small text-secondary mb-4">Have an upcoming celebration in an acoustically challenging room? Send us your venue details or questions below.</p>
+            <form class="quick-contact-form">
+              <div class="row g-3 mb-3">
+                <div class="col-sm-6">
+                  <label class="form-label small">Your Name</label>
+                  <input type="text" class="pulse-input" placeholder="Your name" required>
+                </div>
+                <div class="col-sm-6">
+                  <label class="form-label small">Email Address</label>
+                  <input type="email" class="pulse-input" placeholder="Your email" required>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label small">Venue Dimensions / Question</label>
+                <textarea class="pulse-input" rows="3" placeholder="Describe room dimensions, glass or marble surfaces, guest count..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-pulse">Submit Acoustic Question</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Sidebar Column -->
+        <div class="col-lg-4">
+          <div class="position-sticky" style="top: 100px;">
+            <!-- Takeaways Widget -->
+            <div class="sidebar-widget mb-4">
+              <h5 class="widget-title"><i class="bi bi-bookmark-check text-gradient me-2"></i> Key Takeaways</h5>
+              <ul class="list-unstyled small text-secondary mb-0 d-flex flex-column gap-2" id="articleTakeawaysList">
+                <li><i class="bi bi-check2 text-info me-2"></i> Never boost volume to overcome echo.</li>
+                <li><i class="bi bi-check2 text-info me-2"></i> Deploy distributed arrays at 45-60ft intervals.</li>
+                <li><i class="bi bi-check2 text-info me-2"></i> Outdoor SPL drops 6dB per doubling distance.</li>
+              </ul>
+            </div>
+
+            <!-- Other Articles Widget -->
+            <div class="sidebar-widget mb-4">
+              <h5 class="widget-title"><i class="bi bi-journal-text text-gradient me-2"></i> Explore More Articles</h5>
+              <div class="d-flex flex-column gap-3" id="sidebarRecentArticles">
+                <!-- Populated dynamically by blog-details.js -->
+              </div>
+            </div>
+
+            <!-- Booking Callout Widget -->
+            <div class="sidebar-widget" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.15) 0%, rgba(6, 182, 212, 0.15) 100%), var(--surface-color);">
+              <h5 class="fw-bold mb-2 text-white"><i class="bi bi-soundwave text-info me-2"></i> Acoustic Walkthrough</h5>
+              <p class="small text-secondary mb-4">Planning an event with challenging acoustics? Let our engineers model your venue with Dante & cardioid array calculations.</p>
+              <a href="contact.html" class="btn btn-pulse w-100">
+                <i class="bi bi-calendar2-check"></i> Book Venue Consultation
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== GLOBAL FOOTER ==================== -->
+  <footer class="pulse-footer">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Col 1: Brand & Bio -->
+        <div class="col-lg-4 col-md-6 footer-brand">
+          <a class="navbar-brand mb-3" href="index.html">
+            <span class="brand-icon">
+            <svg class="brand-logo-svg" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" width="26" height="26">
+              <!-- DJ Headphone Arc -->
+              <path d="M6 19.5C6 12 11.4 6 18 6C24.6 6 30 12 30 19.5" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" fill="none"/>
+              <!-- Headphone Ear Cushions -->
+              <rect x="4" y="17.5" width="4" height="9" rx="2" fill="#ffffff"/>
+              <rect x="28" y="17.5" width="4" height="9" rx="2" fill="#ffffff"/>
+              <!-- Pulsing Equalizer Soundwave Bars -->
+              <rect x="11.5" y="18" width="1.8" height="6.5" rx="0.9" fill="#06b6d4"/>
+              <rect x="15" y="15" width="1.8" height="11" rx="0.9" fill="#06b6d4"/>
+              <rect x="19.2" y="15" width="1.8" height="11" rx="0.9" fill="#06b6d4"/>
+              <rect x="22.7" y="18" width="1.8" height="6.5" rx="0.9" fill="#06b6d4"/>
+              <!-- Party Lightning Bolt -->
+              <path d="M19.5 9L14.5 17.5H19L16.5 25L23.5 16H19L21.5 9Z" fill="#fbbf24"/>
+            </svg>
+          </span>
+          <span>Sonic<span class="text-gradient">Drop</span></span>
+          </a>
+          <p class="small text-secondary mb-3">
+            SonicDrop Audio & DJ Production delivers commercial-grade sound engineering, concert sound system hire, DJ talent curation, and architectural lighting for unforgettable events.
+          </p>
+          <div class="social-links">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Services -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-heading">Services</h5>
+          <ul class="footer-links">
+            <li><a href="service-details.html?service=dj">DJ Booking</a></li>
+            <li><a href="services.html">Sound System Rental</a></li>
+            <li><a href="services.html">Stage Lighting Setup</a></li>
+            <li><a href="services.html">Full Event Production</a></li>
+            <li><a href="services.html">Wireless Mic Systems</a></li>
+            <li><a href="services.html">Subwoofer Rental</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Events -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-heading">Events</h5>
+          <ul class="footer-links">
+            <li><a href="packages.html">Weddings & Galas</a></li>
+            <li><a href="packages.html">Birthday Celebrations</a></li>
+            <li><a href="packages.html">Corporate Summits</a></li>
+            <li><a href="packages.html">Private VIP Parties</a></li>
+            <li><a href="packages.html">Concerts & Festivals</a></li>
+            <li><a href="packages.html">College Gatherings</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Quick Navigation -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-heading">Company</h5>
+          <ul class="footer-links">
+            <li><a href="about.html">About Our Story</a></li>
+            <li><a href="packages.html">Tiered Packages</a></li>
+            <li><a href="gallery.html">Event Gallery</a></li>
+            <li><a href="blog.html">Acoustic Blog</a></li>
+            <li><a href="contact.html">Contact & Booking</a></li>
+            <li><a href="coming-soon.html">New Gear Launch</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 5: Contact & Newsletter -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-heading">Contact Direct</h5>
+          <div class="footer-contact-item">
+            <i class="bi bi-telephone"></i>
+            <span>+1 (800) 456-PULSE</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope"></i>
+            <span>bookings@sonicdrop.audio</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt"></i>
+            <span>Audio Studio 4B, Sound District, NY</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-clock"></i>
+            <span>Mon - Sat: 9AM - 8PM</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Copyright -->
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+            &copy; 2026 SonicDrop Audio & DJ Production. All Rights Reserved.
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <a href="contact.html" class="me-3">Privacy Policy</a>
+            <a href="contact.html" class="me-3">Terms & Rental Agreement</a>
+            <a href="contact.html">Safety & Noise Compliance</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" type="button" aria-label="Back to top">
+    <i class="bi bi-chevron-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/rtl.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/forms.js"></script>
+  <script src="assets/js/blog-details.js"></script>
+</body>
+</html>
