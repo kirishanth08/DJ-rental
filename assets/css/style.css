@@ -2012,15 +2012,33 @@ main.hero-with-bg .text-muted {
   display: flex;
   align-items: flex-start;
   gap: 0.75rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.9rem;
   color: #94a3b8;
   font-size: 0.92rem;
+  word-break: break-word;
 }
 
 .footer-contact-item i {
   color: var(--primary-color);
   font-size: 1.1rem;
   margin-top: 0.15rem;
+  flex-shrink: 0;
+}
+
+.footer-contact-item a {
+  color: #94a3b8;
+  text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+.footer-contact-item a:hover {
+  color: var(--secondary-color);
+}
+
+.footer-contact-item .footer-email-link,
+.footer-contact-item .footer-phone-link {
+  white-space: nowrap;
+  display: inline-block;
 }
 
 .social-links {
@@ -3184,6 +3202,26 @@ main.hero-with-bg .text-muted {
 .mixer-channel-card > .p-4 {
   padding-bottom: 2.25rem !important;
 }
+
+/* 6. Services Page Alignment: Keep Celebration FX and all service cards in perfect horizontal alignment */
+.service-card-item .mixer-channel-card h4 {
+  font-size: 1.25rem;
+  line-height: 1.35;
+  margin-bottom: 0.5rem;
+  min-height: 3.4rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.service-card-item .mixer-channel-card .row.align-items-center {
+  align-items: stretch !important;
+}
+
+.service-card-item .mixer-channel-card .col-sm-5 > div {
+  height: 100% !important;
+  min-height: 220px;
+}
+
 
 
 

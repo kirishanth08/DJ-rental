@@ -10,6 +10,75 @@
 
 [dir="rtl"] body {
   font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  text-align: right;
+}
+
+/* ==========================================================================
+   PUNCTUATION & TEXT FLOW FIX:
+   Ensures periods, dots, question marks, and exclamation marks stay at the end
+   of sentences rather than jumping to the front/left in RTL mode.
+   ========================================================================== */
+[dir="rtl"] p,
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] h4,
+[dir="rtl"] h5,
+[dir="rtl"] h6,
+[dir="rtl"] li,
+[dir="rtl"] blockquote,
+[dir="rtl"] .lead,
+[dir="rtl"] .section-title,
+[dir="rtl"] .section-subtitle,
+[dir="rtl"] .accordion-button,
+[dir="rtl"] .accordion-body,
+[dir="rtl"] .card-text,
+[dir="rtl"] .testimonial-text,
+[dir="rtl"] .btn,
+[dir="rtl"] label,
+[dir="rtl"] .modal-title,
+[dir="rtl"] .modal-body,
+[dir="rtl"] .toast-body,
+[dir="rtl"] .toast-header strong,
+[dir="rtl"] .form-label,
+[dir="rtl"] .invalid-feedback {
+  unicode-bidi: plaintext;
+  text-align: right;
+}
+
+/* Preserve centered alignment on intentional center-aligned elements */
+[dir="rtl"] .text-center,
+[dir="rtl"] .text-center p,
+[dir="rtl"] .text-center h1,
+[dir="rtl"] .text-center h2,
+[dir="rtl"] .text-center h3,
+[dir="rtl"] .text-center h4,
+[dir="rtl"] .text-center h5,
+[dir="rtl"] .text-center h6,
+[dir="rtl"] .text-center .section-subtitle,
+[dir="rtl"] .text-center .section-title,
+[dir="rtl"] .hero-content.text-center,
+[dir="rtl"] .section-badge {
+  text-align: center !important;
+}
+
+/* Preserve LTR for phone numbers, email addresses, technical badges and code */
+[dir="rtl"] input[type="tel"],
+[dir="rtl"] input[type="email"],
+[dir="rtl"] a[href^="tel:"],
+[dir="rtl"] a[href^="mailto:"],
+[dir="rtl"] .footer-contact-item span,
+[dir="rtl"] .footer-contact-item a,
+[dir="rtl"] .telemetry-badge,
+[dir="rtl"] .channel-tag,
+[dir="rtl"] .channel-strip-header span:first-child,
+[dir="rtl"] .package-price,
+[dir="rtl"] .stat-number,
+[dir="rtl"] .badge {
+  direction: ltr;
+  unicode-bidi: isolate;
+  display: inline-block;
+  text-align: left;
 }
 
 /* Navbar */

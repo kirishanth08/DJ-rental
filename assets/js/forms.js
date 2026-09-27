@@ -122,5 +122,34 @@
         form.classList.remove('was-validated');
       });
     });
+
+    // 4. Strict Phone Number Input Validation (Disallow alphabets throughout)
+    const phoneInputs = document.querySelectorAll('input[type="tel"], #clientPhone');
+    phoneInputs.forEach((input) => {
+      // Block non-phone keys on keydown/keypress (disallow a-z, A-Z and special characters)
+      input.addEventListener('keypress', function (e) {
+        const char = String.fromCharCode(e.which || e.keyCode);
+        // Allow digits 0-9, space, +, -, (, ), and standard navigation keys (backspace, tab, enter)
+        if (!/[\d\+\-\(\)\s]/.test(char) && e.which !== 0 && e.keyCode !== 8 && e.keyCode !== 13) {
+          e.preventDefault();
+        }
+      });
+
+      // Strip any alphabets or illegal characters if pasted or auto-filled
+      input.addEventListener('input', function () {
+        const sanitized = this.value.replace(/[^\d\+\-\(\)\s]/g, '');
+        if (this.value !== sanitized) {
+          this.value = sanitized;
+        }
+
+        // Custom validation check
+        const digitCount = (this.value.match(/\d/g) || []).length;
+        if (this.value && digitCount < 7) {
+          this.setCustomValidity('Please enter a valid phone number with at least 7 digits.');
+        } else {
+          this.setCustomValidity('');
+        }
+      });
+    });
   });
 })();
