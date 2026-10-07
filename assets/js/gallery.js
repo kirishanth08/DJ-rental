@@ -22,18 +22,22 @@
 
           galleryItems.forEach((item) => {
             const itemCategory = item.getAttribute('data-category');
-            if (filterValue === 'all' || itemCategory === filterValue) {
-              item.style.display = 'block';
-              setTimeout(() => {
+            const matches = filterValue === 'all' || itemCategory === filterValue;
+
+            if (matches) {
+              item.classList.remove('d-none');
+              item.style.display = '';
+              item.style.opacity = '0';
+              item.style.transform = 'scale(0.96)';
+              requestAnimationFrame(() => {
+                item.style.transition = 'opacity 0.25s ease, transform 0.25s ease';
                 item.style.opacity = '1';
                 item.style.transform = 'scale(1)';
-              }, 20);
+              });
             } else {
+              item.classList.add('d-none');
               item.style.opacity = '0';
-              item.style.transform = 'scale(0.95)';
-              setTimeout(() => {
-                item.style.display = 'none';
-              }, 250);
+              item.style.transform = 'scale(0.96)';
             }
           });
         });

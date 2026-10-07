@@ -126,13 +126,31 @@
 
 /* --- Mobile Navigation Offcanvas / Collapsible Menu (All < 992px) --- */
 @media (max-width: 991.98px) {
+  .pulse-navbar {
+    position: relative;
+  }
+
+  /* Absolute dropdown overlay so clicking hamburger never displaces or pushes hero section down */
   .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0.75rem;
+    right: 0.75rem;
     background-color: var(--surface-color);
     border: 1px solid var(--border-color);
     border-radius: 18px;
     padding: 1.5rem;
-    margin-top: 1rem;
-    box-shadow: var(--shadow-lg);
+    margin-top: 0.5rem;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
+    z-index: 1050;
+    max-height: calc(100vh - 90px);
+    overflow-y: auto;
+  }
+
+  [data-theme="light"] .navbar-collapse {
+    background-color: #ffffff;
+    border-color: rgba(15, 23, 42, 0.12);
+    box-shadow: 0 16px 40px rgba(15, 23, 42, 0.18);
   }
 
   .navbar-nav {
@@ -164,16 +182,19 @@
   }
 
   .nav-actions {
+    display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem;
     padding-top: 1rem;
     border-top: 1px solid var(--border-color);
     width: 100%;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 
   .nav-actions .btn-pulse {
     width: 100%;
-    margin-top: 0.5rem;
+    margin-top: 0.25rem;
   }
 
   .page-hero {
@@ -189,6 +210,50 @@
 
   .hero-title {
     font-size: 2.85rem;
+  }
+}
+
+/* --- Desktop Tablet / Medium Laptops (992px - 1199.98px, including 1024px) --- */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .pulse-navbar .container {
+    max-width: 100%;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .pulse-navbar .navbar-brand {
+    font-size: 1.22rem;
+    margin-right: 0.75rem;
+  }
+
+  .pulse-navbar .navbar-nav {
+    gap: 0.15rem !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .pulse-navbar .nav-link {
+    padding: 0.45rem 0.55rem !important;
+    font-size: 0.88rem !important;
+    white-space: nowrap;
+  }
+
+  .pulse-navbar .nav-actions {
+    gap: 0.45rem !important;
+    flex-shrink: 0;
+  }
+
+  .pulse-navbar .control-btn,
+  .pulse-navbar .rtl-toggle-btn {
+    height: 36px;
+    padding: 0 0.65rem;
+    font-size: 0.82rem;
+  }
+
+  .pulse-navbar .btn-pulse {
+    padding: 0.45rem 0.95rem !important;
+    font-size: 0.86rem !important;
+    white-space: nowrap;
   }
 }
 

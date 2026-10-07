@@ -64,14 +64,6 @@
         const newTheme = activeTheme === 'dark' ? 'light' : 'dark';
         localStorage.setItem(STORAGE_KEY, newTheme);
         applyTheme(newTheme);
-
-        if (window.showPulseToast) {
-          window.showPulseToast(
-            'Theme Updated',
-            `Switched to ${newTheme === 'dark' ? 'Dark' : 'Light'} Mode`,
-            'info'
-          );
-        }
       });
     });
   });

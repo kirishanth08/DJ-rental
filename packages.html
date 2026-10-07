@@ -86,7 +86,6 @@
 
             <!-- RTL Toggle Button -->
             <button class="rtl-toggle-btn" type="button" aria-label="Toggle direction">
-              <i class="bi bi-translate"></i>
               <span class="rtl-text">RTL</span>
             </button>
 
@@ -104,7 +103,7 @@
   <section class="page-hero hero-with-bg" style="background-image: url('https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1920&q=80');">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-lg-7">
+        <div class="col-lg-9 col-xl-8">
           <ul class="breadcrumb-list mb-3">
             <li><a href="index.html">Home</a></li>
             <li><i class="bi bi-chevron-right text-muted small"></i></li>
@@ -120,15 +119,6 @@
           <p class="lead text-secondary mb-0">
             Calibrated equipment tiers sized to your exact guest count and venue architecture. Every package includes delivery, setup, soundcheck, and strike.
           </p>
-        </div>
-        <div class="col-lg-5 text-lg-end mt-4 mt-lg-0">
-          <!-- Size Selector Filter -->
-          <div class="filter-btn-group justify-content-lg-end mb-0">
-            <button type="button" class="filter-btn package-filter-btn active" data-size="all">All Sizes</button>
-            <button type="button" class="filter-btn package-filter-btn" data-size="small">Small (30-100)</button>
-            <button type="button" class="filter-btn package-filter-btn" data-size="medium">Medium (100-350)</button>
-            <button type="button" class="filter-btn package-filter-btn" data-size="large">Large (350-2,000+)</button>
-          </div>
         </div>
       </div>
     </div>
@@ -152,7 +142,28 @@
   <!-- ==================== SECTION 2: TIERED PACKAGES GRID ==================== -->
   <section class="py-5" id="packages-grid">
     <div class="container py-4">
-      <div class="row g-4 align-items-stretch pt-3">
+      <!-- Section 2 Guidance Header & Repositioned Option Menus -->
+      <div class="text-center mb-5">
+        <div class="section-badge mb-2">
+          <i class="bi bi-sliders2-vertical"></i> Transparent Equipment Tiers
+        </div>
+        <h2 class="section-title">Select Your <span class="text-gradient">Event Scale</span></h2>
+        <p class="section-subtitle">
+          Filter our turnkey packages by anticipated guest count to view tailored hardware inventories and instant package pricing.
+        </p>
+
+        <!-- Properly aligned, spaced, and padded option menus -->
+        <div class="d-flex justify-content-center pt-3">
+          <div class="filter-btn-group p-2 rounded-pill shadow-sm" style="background: var(--surface-elevated); border: 1px solid var(--border-color); display: inline-flex; gap: 0.5rem; flex-wrap: wrap; justify-content: center;">
+            <button type="button" class="filter-btn package-filter-btn active" data-size="all">All Sizes</button>
+            <button type="button" class="filter-btn package-filter-btn" data-size="small">Small (30–100 Guests)</button>
+            <button type="button" class="filter-btn package-filter-btn" data-size="medium">Medium (100–350 Guests)</button>
+            <button type="button" class="filter-btn package-filter-btn" data-size="large">Large (350–2,000+ Guests)</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4 align-items-stretch pt-2">
         <!-- 1. Small Event Tier -->
         <div class="col-lg-4 package-item" data-size="small">
           <div class="package-card p-4 h-100 d-flex flex-column">

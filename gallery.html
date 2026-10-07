@@ -86,7 +86,6 @@
 
             <!-- RTL Toggle Button -->
             <button class="rtl-toggle-btn" type="button" aria-label="Toggle direction">
-              <i class="bi bi-translate"></i>
               <span class="rtl-text">RTL</span>
             </button>
 
@@ -100,10 +99,10 @@
     </nav>
   </header>
 
-  <!-- ==================== SECTION 1: PAGE HERO & FILTER BAR ==================== -->
+  <!-- ==================== SECTION 1: PAGE HERO ==================== -->
   <section class="page-hero hero-with-bg" style="background-image: url('https://images.unsplash.com/photo-1518609878373-06d740f60d8b?auto=format&fit=crop&w=1920&q=80');">
     <div class="container">
-      <div class="row align-items-center mb-4">
+      <div class="row align-items-center">
         <div class="col-lg-8">
           <ul class="breadcrumb-list mb-3">
             <li><a href="index.html">Home</a></li>
@@ -127,16 +126,6 @@
           </span>
         </div>
       </div>
-
-      <!-- Gallery Filter Controls -->
-      <div class="filter-btn-group">
-        <button type="button" class="filter-btn gallery-filter-btn active" data-filter="all">All Events</button>
-        <button type="button" class="filter-btn gallery-filter-btn" data-filter="weddings">Weddings</button>
-        <button type="button" class="filter-btn gallery-filter-btn" data-filter="corporate">Corporate</button>
-        <button type="button" class="filter-btn gallery-filter-btn" data-filter="concerts">Concerts</button>
-        <button type="button" class="filter-btn gallery-filter-btn" data-filter="club">Club Nights</button>
-        <button type="button" class="filter-btn gallery-filter-btn" data-filter="parties">Private Parties</button>
-      </div>
     </div>
   </section>
 
@@ -157,6 +146,29 @@
   <!-- ==================== SECTION 2: DYNAMIC FILTERABLE GALLERY GRID (12 DISTINCT IMAGES) ==================== -->
   <section class="py-5" id="gallery-grid-section">
     <div class="container py-4">
+      <!-- Section 2 Header & Repositioned Category Filter Toolbar -->
+      <div class="text-center mb-5">
+        <div class="section-badge mb-2">
+          <i class="bi bi-images"></i> Curated Production Archives
+        </div>
+        <h2 class="section-title">Capturing The <span class="text-gradient">Sonic Atmosphere</span></h2>
+        <p class="section-subtitle">
+          Filter our live celebration records by event genre to inspect sound system deployment, crowd energy, and synchronized lighting.
+        </p>
+
+        <!-- Properly aligned, spaced, and padded option menus -->
+        <div class="d-flex justify-content-center pt-3">
+          <div class="filter-btn-group p-2 rounded-pill shadow-sm" style="background: var(--surface-elevated); border: 1px solid var(--border-color); display: inline-flex; gap: 0.5rem; flex-wrap: wrap; justify-content: center;">
+            <button type="button" class="filter-btn gallery-filter-btn active" data-filter="all">All Events</button>
+            <button type="button" class="filter-btn gallery-filter-btn" data-filter="weddings">Weddings</button>
+            <button type="button" class="filter-btn gallery-filter-btn" data-filter="corporate">Corporate</button>
+            <button type="button" class="filter-btn gallery-filter-btn" data-filter="concerts">Concerts</button>
+            <button type="button" class="filter-btn gallery-filter-btn" data-filter="club">Club Nights</button>
+            <button type="button" class="filter-btn gallery-filter-btn" data-filter="parties">Private Parties</button>
+          </div>
+        </div>
+      </div>
+
       <div class="row g-4" id="galleryContainer">
         <!-- 1. Concerts (Confetti Blast) -->
         <div class="col-md-6 col-lg-4 gallery-item" data-category="concerts">
