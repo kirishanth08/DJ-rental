@@ -159,6 +159,12 @@
   margin-left: 0;
 }
 
+[dir="rtl"] .form-select {
+  background-position: left 0.75rem center !important;
+  padding-left: 2.25rem !important;
+  padding-right: 0.75rem !important;
+}
+
 /* Toast & Back to Top */
 [dir="rtl"] .pulse-toast-container,
 [dir="rtl"] .back-to-top {
@@ -175,4 +181,193 @@
 /* Breadcrumbs */
 [dir="rtl"] .breadcrumb-list {
   padding-right: 0;
+}
+
+/* ==========================================================================
+   BOOTSTRAP 5 LTR UTILITY OVERRIDES FOR RTL
+   Overrides LTR utilities since standard bootstrap.min.css is loaded
+   ========================================================================== */
+[dir="rtl"] .text-start,
+[dir="rtl"] .text-sm-start,
+[dir="rtl"] .text-md-start,
+[dir="rtl"] .text-lg-start,
+[dir="rtl"] .text-xl-start {
+  text-align: right !important;
+}
+
+[dir="rtl"] .text-end,
+[dir="rtl"] .text-sm-end,
+[dir="rtl"] .text-md-end,
+[dir="rtl"] .text-lg-end,
+[dir="rtl"] .text-xl-end {
+  text-align: left !important;
+}
+
+/* Float utilities */
+[dir="rtl"] .float-start {
+  float: right !important;
+}
+
+[dir="rtl"] .float-end {
+  float: left !important;
+}
+
+/* Margin-end to Margin-left */
+[dir="rtl"] .me-0 { margin-left: 0 !important; margin-right: 0 !important; }
+[dir="rtl"] .me-1 { margin-left: 0.25rem !important; margin-right: 0 !important; }
+[dir="rtl"] .me-2 { margin-left: 0.5rem !important; margin-right: 0 !important; }
+[dir="rtl"] .me-3 { margin-left: 1rem !important; margin-right: 0 !important; }
+[dir="rtl"] .me-4 { margin-left: 1.5rem !important; margin-right: 0 !important; }
+[dir="rtl"] .me-5 { margin-left: 3rem !important; margin-right: 0 !important; }
+[dir="rtl"] .me-auto { margin-left: auto !important; margin-right: 0 !important; }
+
+/* Margin-start to Margin-right */
+[dir="rtl"] .ms-0 { margin-right: 0 !important; margin-left: 0 !important; }
+[dir="rtl"] .ms-1 { margin-right: 0.25rem !important; margin-left: 0 !important; }
+[dir="rtl"] .ms-2 { margin-right: 0.5rem !important; margin-left: 0 !important; }
+[dir="rtl"] .ms-3 { margin-right: 1rem !important; margin-left: 0 !important; }
+[dir="rtl"] .ms-4 { margin-right: 1.5rem !important; margin-left: 0 !important; }
+[dir="rtl"] .ms-5 { margin-right: 3rem !important; margin-left: 0 !important; }
+[dir="rtl"] .ms-auto { margin-right: auto !important; margin-left: 0 !important; }
+
+/* Padding-end to Padding-left */
+[dir="rtl"] .pe-0 { padding-left: 0 !important; padding-right: 0 !important; }
+[dir="rtl"] .pe-1 { padding-left: 0.25rem !important; padding-right: 0 !important; }
+[dir="rtl"] .pe-2 { padding-left: 0.5rem !important; padding-right: 0 !important; }
+[dir="rtl"] .pe-3 { padding-left: 1rem !important; padding-right: 0 !important; }
+[dir="rtl"] .pe-4 { padding-left: 1.5rem !important; padding-right: 0 !important; }
+[dir="rtl"] .pe-5 { padding-left: 3rem !important; padding-right: 0 !important; }
+
+/* Padding-start to Padding-right */
+[dir="rtl"] .ps-0 { padding-right: 0 !important; padding-left: 0 !important; }
+[dir="rtl"] .ps-1 { padding-right: 0.25rem !important; padding-left: 0 !important; }
+[dir="rtl"] .ps-2 { padding-right: 0.5rem !important; padding-left: 0 !important; }
+[dir="rtl"] .ps-3 { padding-right: 1rem !important; padding-left: 0 !important; }
+[dir="rtl"] .ps-4 { padding-right: 1.5rem !important; padding-left: 0 !important; }
+[dir="rtl"] .ps-5 { padding-right: 3rem !important; padding-left: 0 !important; }
+
+/* Border Directions */
+[dir="rtl"] .border-start {
+  border-right: 1px solid var(--border-color) !important;
+  border-left: 0 !important;
+}
+
+[dir="rtl"] .border-end {
+  border-left: 1px solid var(--border-color) !important;
+  border-right: 0 !important;
+}
+
+/* Navbar & Controls */
+[dir="rtl"] .navbar-brand {
+  margin-right: 0 !important;
+  margin-left: 1.5rem !important;
+}
+
+[dir="rtl"] .nav-link.dropdown-toggle::after {
+  margin-left: 0 !important;
+  margin-right: 0.35rem !important;
+}
+
+[dir="rtl"] .dropdown-menu {
+  text-align: right !important;
+  left: auto !important;
+  right: 0 !important;
+}
+
+[dir="rtl"] .dropdown-item {
+  text-align: right !important;
+}
+
+[dir="rtl"] .btn-close {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+
+/* Component Overrides: Badges, Search, and Lists */
+[dir="rtl"] .celebration-badge-pill {
+  left: auto !important;
+  right: 15px !important;
+}
+
+[dir="rtl"] #blogSearchInput {
+  padding-right: 2.75rem !important;
+  padding-left: 1rem !important;
+}
+
+[dir="rtl"] .blog-filter-toolbar .bi-search,
+[dir="rtl"] .position-relative input#blogSearchInput ~ .bi-search {
+  left: auto !important;
+  right: 1rem !important;
+}
+
+[dir="rtl"] .service-features-list li,
+[dir="rtl"] .package-features li,
+[dir="rtl"] .list-unstyled li {
+  text-align: right;
+}
+
+[dir="rtl"] .service-features-list li i,
+[dir="rtl"] .package-features li i,
+[dir="rtl"] .list-unstyled li i {
+  margin-right: 0 !important;
+  margin-left: 0.5rem !important;
+}
+
+/* Button Directional Icons */
+[dir="rtl"] .btn .bi-arrow-right,
+[dir="rtl"] .btn .bi-chevron-right {
+  margin-left: 0 !important;
+  margin-right: 0.4rem !important;
+  transform: rotate(180deg) !important;
+}
+
+[dir="rtl"] .btn .bi-arrow-left,
+[dir="rtl"] .btn .bi-chevron-left {
+  margin-right: 0 !important;
+  margin-left: 0.4rem !important;
+  transform: rotate(180deg) !important;
+}
+
+[dir="rtl"] .btn > i:first-child:not(.bi-arrow-right):not(.bi-chevron-right) {
+  margin-right: 0 !important;
+  margin-left: 0.4rem !important;
+}
+
+/* ==========================================================================
+   DATE & CALENDAR PICKER RTL / LTR ALIGNMENT
+   ========================================================================== */
+[dir="rtl"] input[type="date"],
+[dir="rtl"] input[type="date"].pulse-input {
+  direction: rtl !important;
+  text-align: right !important;
+}
+
+[dir="rtl"] input[type="date"]::-webkit-calendar-picker-indicator,
+[dir="rtl"] input[type="date"].pulse-input::-webkit-calendar-picker-indicator {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+
+/* Ensure blog date, timestamps, event dates and publication dates keep proper sequence */
+[dir="rtl"] .blog-date,
+[dir="rtl"] .blog-badge-tag,
+[dir="rtl"] time,
+[dir="rtl"] .event-date-display,
+[dir="rtl"] [data-date],
+[dir="rtl"] .meta-date {
+  direction: ltr !important;
+  unicode-bidi: isolate !important;
+  display: inline-flex !important;
+  align-items: center !important;
+}
+
+/* Channel Strip Header in RTL: keep technical label and tag crisp */
+[dir="rtl"] .channel-strip-header {
+  flex-direction: row-reverse !important;
+}
+
+[dir="rtl"] .channel-strip-header span:first-child,
+[dir="rtl"] .channel-tag {
+  direction: ltr !important;
+  unicode-bidi: isolate !important;
 }
