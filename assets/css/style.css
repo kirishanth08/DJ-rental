@@ -996,9 +996,21 @@ main.hero-with-bg .text-muted {
   text-shadow: none !important;
 }
 
-.hero-feature-pill:hover {
-  border-color: var(--primary-color) !important;
-  transform: translateY(-2px);
+[data-theme="light"] .hero-feature-pill {
+  background: #ffffff !important;
+  border: 1.5px solid #cbd5e1 !important;
+}
+
+[data-theme="light"] .hero-feature-pill h6,
+[data-theme="light"] .hero-feature-pill h5,
+[data-theme="light"] .hero-feature-pill h4 {
+  color: #0f172a !important;
+}
+
+[data-theme="light"] .hero-feature-pill small,
+[data-theme="light"] .hero-feature-pill .text-muted {
+  color: #334155 !important;
+  font-weight: 600 !important;
 }
 
 .hero-feature-pill:hover {
@@ -1090,9 +1102,27 @@ main.hero-with-bg .text-muted {
 }
 
 [data-theme="light"] .hero-floating-badge {
-  background: #ffffff;
-  border: 1.5px solid #cbd5e1;
-  box-shadow: none !important;
+  background: #ffffff !important;
+  border: 1.5px solid #cbd5e1 !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08) !important;
+}
+
+[data-theme="light"] .hero-floating-badge h1,
+[data-theme="light"] .hero-floating-badge h2,
+[data-theme="light"] .hero-floating-badge h3,
+[data-theme="light"] .hero-floating-badge h4,
+[data-theme="light"] .hero-floating-badge h5,
+[data-theme="light"] .hero-floating-badge h6,
+[data-theme="light"] .hero-floating-badge strong,
+[data-theme="light"] .hero-floating-badge .fw-bold {
+  color: #0f172a !important;
+}
+
+[data-theme="light"] .hero-floating-badge small,
+[data-theme="light"] .hero-floating-badge .text-muted,
+[data-theme="light"] .hero-floating-badge p {
+  color: #334155 !important;
+  font-weight: 600 !important;
 }
 
 .hero-floating-badge .badge-icon {
@@ -3465,7 +3495,7 @@ button.btn-outline-pulse:active {
   width: 100% !important;
 }
 
-/* 6. Services Page Alignment */
+/* 6. Services Page Alignment & CTA Container Layout */
 .service-card-item .mixer-channel-card h4 {
   font-size: 1.25rem;
   line-height: 1.35;
@@ -3482,6 +3512,30 @@ button.btn-outline-pulse:active {
 .service-card-item .mixer-channel-card .col-sm-5 > div {
   height: 100% !important;
   min-height: 220px;
+}
+
+.service-card-item .mixer-channel-card .col-sm-7 {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+}
+
+.service-card-item .mixer-channel-card .col-sm-7 .btn-outline-pulse,
+.service-card-item .mixer-channel-card .col-sm-7 a.btn {
+  margin-top: 1.5rem !important;
+  margin-bottom: 0 !important;
+  width: 100% !important;
+}
+
+.service-card-item .mixer-channel-card > .p-4 {
+  padding-bottom: 1.5rem !important;
+}
+
+/* Page Hero Centered Alignment System */
+.page-hero.text-center .breadcrumb-list,
+.page-hero .breadcrumb-list.mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 /* 7. Blog Card Uniformity */
